@@ -2,9 +2,11 @@ import Fastify from "fastify";
 import fastifyJwt from "fastify-jwt";
 import swagger from "fastify-swagger";
 import { withRefResolver } from "fastify-zod";
+
 import userRoutes from "./routes/user.routes";
 import { version } from "../package.json";
 import { authenticate } from "./middleware/authenticate";
+import authRoutes from "./routes/auth.routes";
 
 function buildServer() {
   const server = Fastify({
@@ -45,6 +47,7 @@ function buildServer() {
 
   // Listener Server
   server.register(userRoutes, { prefix: "/users" });
+  server.register(authRoutes, { prefix: "/auth" });
 
   server.get("/healthcheck", async () => {
     return { status: "OK" };

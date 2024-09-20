@@ -1,4 +1,4 @@
-import { getEnvVariable } from "../helpers";
+import { getEnvVariable } from "../utils/getEnvVariable";
 import jwt, { VerifyErrors } from "jsonwebtoken";
 
 export interface TokenPayloadJWT {

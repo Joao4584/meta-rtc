@@ -17,28 +17,6 @@ async function userRoutes(server: FastifyInstance) {
     }, registerUserHandler
   );
 
-
-  // server.post(
-  //   "/login",
-  //   {
-  //     schema: {
-  //       body: $ref("loginSchema"),
-  //       tags: ["Users"],
-  //       response: {
-  //         200: $ref("loginResponseSchema"),
-  //       },
-  //     },
-  //   },
-  //   loginHandler
-  // );
-
-  // server.get(
-  //   "/",
-  //   {
-  //     preHandler: [server.authenticate],
-  //   },
-  //   getUsersHandler
-  // );
 }
 
 export default userRoutes;

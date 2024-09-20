@@ -16,9 +16,8 @@ const userCore = {
 const createUserSchema = z.object({
   ...userCore,
   password: z.string({
-    required_error: "Password is required",
-    invalid_type_error: "Password must be a string",
-  }),
+    required_error: "password is required",
+  }).min(6, "Full password is required"),
 });
 
 const createUserResponseSchema = z.object({

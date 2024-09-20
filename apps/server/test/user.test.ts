@@ -13,17 +13,7 @@ beforeAll(async () => {
   await app.ready(); 
 });
 
-afterAll(async () => {
-  await prisma.logs.deleteMany({
-    where: { user: { user: 'testuser' } }
-  });
 
-  await prisma.users.deleteMany({ where: { user: 'testuser' } });
-  await app.close(); 
-});
-
-
-// * Tests
 let defaultUser = {
   user: 'testuser',
   password: 'password123',
@@ -31,6 +21,17 @@ let defaultUser = {
   name: 'Test User'
 };
 
+afterAll(async () => {
+  await prisma.logs.deleteMany({
+    where: { user: { user: defaultUser.user } }
+  });
+
+  await prisma.users.deleteMany({ where: { user: defaultUser.user } });
+  await app.close(); 
+});
+
+
+// * Tests
 describe('User Registration', () => {
   it('should register a new user successfully', async () => {
     const response = await request(app.server)

@@ -2,7 +2,7 @@ import { FastifyReply, FastifyRequest } from "fastify";
 
 import { CreateUserInput } from "./user.schema";
 import { UserRepository } from "../../repositorys/user.repo";
-import Logs from "../../services/logs";
+import Logs from "../../helpers/logs";
 import { RouteError } from "../../utils/Errors/routeError";
 
 export async function registerUserHandler(request: FastifyRequest<{ Body: CreateUserInput; }>, reply: FastifyReply) {
