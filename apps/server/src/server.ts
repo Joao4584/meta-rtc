@@ -14,7 +14,7 @@ function buildServer() {
   });
 
   // @ts-ignore
-  server.register(fastifyJwt, { secret: process.env.JWT_SECRET || "default_secret_key" });
+  server.register(fastifyJwt, { secret: process.env.JWT_SECRET_KEY || "default_secret_key" });
 
   server.decorate("authenticate", authenticate);
 

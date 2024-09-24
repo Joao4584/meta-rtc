@@ -3,7 +3,7 @@ import { FastifyReply, FastifyRequest } from "fastify";
 import { CreateUserInput } from "./user.schema";
 import { UserRepository } from "../../repositorys/user.repo";
 import Logs from "../../helpers/logs";
-import { RouteError } from "../../utils/Errors/routeError";
+import { RouteError } from "../../utils/errors/routeError";
 
 export async function registerUserHandler(request: FastifyRequest<{ Body: CreateUserInput; }>, reply: FastifyReply) {
   const body = request.body;

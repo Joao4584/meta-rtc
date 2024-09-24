@@ -12,7 +12,7 @@ export default function Test() {
   }, []);
 
   return (
-    <div className="">
+    <div className="">aaaaa
       {t('languages.en')}
     </div>
   );

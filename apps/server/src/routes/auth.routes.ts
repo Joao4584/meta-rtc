@@ -1,5 +1,5 @@
 import { FastifyInstance } from "fastify";
-import { authHandler } from "../controllers/auth/auth.controller";
+import { authHandler, pingHandler } from "../controllers/auth/auth.controller";
 import { $ref, authSchemas } from "../controllers/auth/auth.schema";
 
 async function authRoutes(server: FastifyInstance) {
@@ -16,12 +16,12 @@ async function authRoutes(server: FastifyInstance) {
     }, authHandler
   );
 
-  server.post("/validate", {
+  server.get("/ping", {
       schema: {
-        body: $ref("loginSchema"),
         tags: ["Authentication"],
       },
-    }, authHandler
+      preHandler: [server.authenticate]
+    }, pingHandler
   );
 
 }

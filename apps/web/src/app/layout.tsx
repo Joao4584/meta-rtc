@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
-import "./globals.css";
+
+import "../assets/globals.css";
 import { GeistSans } from "geist/font/sans";
 
 export const metadata: Metadata = {

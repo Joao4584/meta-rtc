@@ -2,7 +2,7 @@
 
 import { compare, hash } from "bcryptjs";
 import { prisma } from "../prisma";
-import { RouteError } from "../utils/Errors/routeError";
+import { RouteError } from "../utils/errors/routeError";
 
 // * Exports * //
  

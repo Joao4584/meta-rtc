@@ -1,5 +1,5 @@
 {
-  "name": "meta-office",
+  "name": "meta-webrtc",
   "version": "1.0.0",
   "private": true,
   "workspaces": [
