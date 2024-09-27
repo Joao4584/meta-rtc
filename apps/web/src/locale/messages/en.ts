@@ -1,9 +1,19 @@
 export default {
-  title : {
-    test : "title test language"
+  homepage: {
+    construction: {
+      title: "Project under Construction",
+      description: "We are working hard to bring you something amazing. Stay tuned!",
+      button: {
+        github: "Access GitHub"
+      }
+    }
   },
-  languages: {
-    en: "English",
-    pt: "Portuguese",
-  },
+  dashboard: {
+    routes: {
+      dashboard: "Dashboard",
+      social: "Social",
+      diagram: "Shared Diagram", 
+      sprint: "Sprint Votes",
+    }
+  }
 } as const;

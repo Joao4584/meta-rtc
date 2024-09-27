@@ -7,9 +7,6 @@ import { useEffect } from 'react';
 export default function Test() {
   const t = useI18n();
 
-  useEffect(() => {
-    document.title = t('title.test')
-  }, []);
 
   return (
     <div className="">aaaaa

@@ -1,10 +1,14 @@
+import DashboardLayout from "@/components/layout/DashboardLayout";
 import React from "react";
 
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <React.Fragment>
-       {children}
+      <DashboardLayout>
+        
+        {children}
+      </DashboardLayout>
     </React.Fragment>
   );
 }

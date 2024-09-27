@@ -1,7 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-/* 
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -12,17 +12,44 @@
     --background: #0a0a0a;
     --foreground: #ededed;
   }
-} */
+} 
 
 body {
   color: var(--foreground);
   background: var(--background);
   margin: 0;
   padding: 0;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+.rounded-min {
+  border-radius: 0px;
+}
+
+.icon-menu-svg svg {
+  width: 18px;
+  height: 18px;
+}
+
+@keyframes rain {
+  0% {
+    opacity: 1;
+    transform: translateY(-100vh);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(100vh);
+  }
+}
+
+.animate-rain {
+  animation: rain linear infinite;
 }
