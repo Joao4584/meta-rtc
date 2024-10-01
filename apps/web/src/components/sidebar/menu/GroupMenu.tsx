@@ -17,6 +17,7 @@ const GroupMenu: React.FC<GroupMenuProps> = ({ group, dashboardSegment, router }
     const toggleOpen = () => {
         setIsOpen(!isOpen);
     };
+    
 
     return (
         <React.Fragment>

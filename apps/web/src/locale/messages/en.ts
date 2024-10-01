@@ -14,6 +14,20 @@ export default {
       social: "Social",
       diagram: "Shared Diagram", 
       sprint: "Sprint Votes",
+    },
+    notFound: {
+      title: "Page Not Found",
+      description: "Sorry, this page is down or does not exist.",
+      link: "Go to Dashboard",
+      document: "View documentation"
+    },
+    translate:{
+      traduction: "Change Language",
+      selectLanguage: "Select Language",
+      listLanguages: {
+        en: "English",
+        pt: "Portuguese"
+      }
     }
   }
 } as const;

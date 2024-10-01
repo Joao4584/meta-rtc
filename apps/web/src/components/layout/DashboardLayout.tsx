@@ -7,7 +7,7 @@ import { MainPattern } from "../ui/GridPattern";
 
 export default function DashboardLayout({ children }: { children: ReactNode }) {
   return (
-    <main className="w-full h-full overflow-hidden">
+    <main className="w-full h-full overflow-hidden dark:text-slate-200">
       <MainPattern />
       <HeaderDashboard />
       <div className="flex w-full" style={{ height: "calc(100vh - 64px)"}}>

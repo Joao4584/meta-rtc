@@ -28,7 +28,6 @@ export function Providers({ locale, children }: ProviderProps) {
       <QueryClientProvider client={queryClient}>
         <ThemeProvider>
           {children}
-          {/* <ReactQueryDevtools /> */}
         </ThemeProvider>
       </QueryClientProvider>
 

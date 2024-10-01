@@ -7,10 +7,9 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
   return (
     <NextThemeProvider
       attribute="class"
-      defaultTheme="white"
+      defaultTheme="dark"
       themes={['light', 'dark']}
       enableSystem={false}
-      disableTransitionOnChange
     >
       {children}
     </NextThemeProvider>
