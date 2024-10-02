@@ -1,755 +1,136 @@
-
-> fastify-meta@1.0.0 test
-> vitest
-
-
-[7m[1m[34m DEV [39m[22m[27m [34mv2.1.1[39m [90mC:/Users/joaor/Documents/Joao4584/Projetos/meta-office/apps/server[39m
-
- [32m✓[39m test/user.test.ts [2m ([22m[2m3 tests[22m[2m)[22m[33m 642[2mms[22m[39m
-
-[2m Test Files [22m [1m[32m1 passed[39m[22m[90m (1)[39m
-[2m      Tests [22m [1m[32m3 passed[39m[22m[90m (3)[39m
-[2m   Start at [22m 00:02:47
-[2m   Duration [22m 1.77s[2m (transform 127ms, setup 0ms, collect 792ms, tests 642ms, environment 0ms, prepare 121ms)[22m
-
-
-[1m[7m[32m PASS [39m[27m[22m[32m Waiting for file changes...[39m
-       [2mpress [22m[1mh[22m[2m to show help[22m[2m, [22m[2mpress [22m[1mq[22m[2m to quit[22m
-c[3J
-[7m[1m[34m RERUN [39m[22m[27m[2m test/user.test.ts[22m [34mx1[39m
-
- [32m✓[39m test/user.test.ts [2m ([22m[2m3 tests[22m[2m)[22m[33m 548[2mms[22m[39m
-
-[2m Test Files [22m [1m[32m1 passed[39m[22m[90m (1)[39m
-[2m      Tests [22m [1m[32m3 passed[39m[22m[90m (3)[39m
-[2m   Start at [22m 00:04:45
-[2m   Duration [22m 1.11s
-
-
-[1m[7m[32m PASS [39m[27m[22m[32m Waiting for file changes...[39m
-       [2mpress [22m[1mh[22m[2m to show help[22m[2m, [22m[2mpress [22m[1mq[22m[2m to quit[22m
-       [34mrerun x1[39m
-[2K[1A[2K[G       [90mrerun x1[39m
-[2K[1A[2K[G       [2m[90mrerun x1[39m[22m
-[2K[1A[2K[Gc[3J
-[7m[1m[34m RERUN [39m[22m[27m[2m test/user.test.ts[22m [34mx2[39m
-
- [32m✓[39m test/user.test.ts [2m ([22m[2m3 tests[22m[2m)[22m[33m 554[2mms[22m[39m
-
-[2m Test Files [22m [1m[32m1 passed[39m[22m[90m (1)[39m
-[2m      Tests [22m [1m[32m3 passed[39m[22m[90m (3)[39m
-[2m   Start at [22m 00:08:25
-[2m   Duration [22m 1.08s
-
-
-[1m[7m[32m PASS [39m[27m[22m[32m Waiting for file changes...[39m
-       [2mpress [22m[1mh[22m[2m to show help[22m[2m, [22m[2mpress [22m[1mq[22m[2m to quit[22m
-       [34mrerun x2[39m
-[2K[1A[2K[G       [90mrerun x2[39m
-[2K[1A[2K[G       [2m[90mrerun x2[39m[22m
-[2K[1A[2K[Gc[3J
-[7m[1m[34m RERUN [39m[22m[27m[2m test/user.test.ts[22m [34mx3[39m
-
- [32m✓[39m test/user.test.ts [2m ([22m[2m3 tests[22m[2m)[22m[33m 520[2mms[22m[39m
-
-[2m Test Files [22m [1m[32m1 passed[39m[22m[90m (1)[39m
-[2m      Tests [22m [1m[32m3 passed[39m[22m[90m (3)[39m
-[2m   Start at [22m 00:09:46
-[2m   Duration [22m 1.00s
-
-
-[1m[7m[32m PASS [39m[27m[22m[32m Waiting for file changes...[39m
-       [2mpress [22m[1mh[22m[2m to show help[22m[2m, [22m[2mpress [22m[1mq[22m[2m to quit[22m
-       [34mrerun x3[39m
-[2K[1A[2K[Gc[3J
-[7m[1m[34m RERUN [39m[22m[27m[2m test/user.test.ts[22m [34mx4[39m
-
- [32m✓[39m test/user.test.ts [2m ([22m[2m3 tests[22m[2m)[22m[33m 536[2mms[22m[39m
-
-[2m Test Files [22m [1m[32m1 passed[39m[22m[90m (1)[39m
-[2m      Tests [22m [1m[32m3 passed[39m[22m[90m (3)[39m
-[2m   Start at [22m 00:09:47
-[2m   Duration [22m 1.00s
-
-
-[1m[7m[32m PASS [39m[27m[22m[32m Waiting for file changes...[39m
-       [2mpress [22m[1mh[22m[2m to show help[22m[2m, [22m[2mpress [22m[1mq[22m[2m to quit[22m
-       [34mrerun x4[39m
-[2K[1A[2K[G       [90mrerun x4[39m
-[2K[1A[2K[G       [2m[90mrerun x4[39m[22m
-[2K[1A[2K[Gc[3J
-[7m[1m[34m RERUN [39m[22m[27m[2m test/user.test.ts[22m [34mx5[39m
-
- [32m✓[39m test/user.test.ts [2m ([22m[2m3 tests[22m[2m)[22m[33m 490[2mms[22m[39m
-
-[2m Test Files [22m [1m[32m1 passed[39m[22m[90m (1)[39m
-[2m      Tests [22m [1m[32m3 passed[39m[22m[90m (3)[39m
-[2m   Start at [22m 00:10:04
-[2m   Duration [22m 964ms
-
-
-[1m[7m[32m PASS [39m[27m[22m[32m Waiting for file changes...[39m
-       [2mpress [22m[1mh[22m[2m to show help[22m[2m, [22m[2mpress [22m[1mq[22m[2m to quit[22m
-       [34mrerun x5[39m
-[2K[1A[2K[G       [90mrerun x5[39m
-[2K[1A[2K[G       [2m[90mrerun x5[39m[22m
-[2K[1A[2K[Gc[3J
-[7m[1m[34m RERUN [39m[22m[27m[2m test/user.test.ts[22m [34mx6[39m
-
- [32m✓[39m test/user.test.ts [2m ([22m[2m3 tests[22m[2m)[22m[33m 527[2mms[22m[39m
-
-[2m Test Files [22m [1m[32m1 passed[39m[22m[90m (1)[39m
-[2m      Tests [22m [1m[32m3 passed[39m[22m[90m (3)[39m
-[2m   Start at [22m 00:10:50
-[2m   Duration [22m 1.07s
-
-
-[1m[7m[32m PASS [39m[27m[22m[32m Waiting for file changes...[39m
-       [2mpress [22m[1mh[22m[2m to show help[22m[2m, [22m[2mpress [22m[1mq[22m[2m to quit[22m
-       [34mrerun x6[39m
-[2K[1A[2K[G       [90mrerun x6[39m
-[2K[1A[2K[G       [2m[90mrerun x6[39m[22m
-[2K[1A[2K[Gc[3J
-[7m[1m[34m RERUN [39m[22m[27m[2m src/routes/user.routes.ts[22m [34mx7[39m
-
- [32m✓[39m test/user.test.ts [2m ([22m[2m3 tests[22m[2m)[22m[33m 552[2mms[22m[39m
-
-[2m Test Files [22m [1m[32m1 passed[39m[22m[90m (1)[39m
-[2m      Tests [22m [1m[32m3 passed[39m[22m[90m (3)[39m
-[2m   Start at [22m 00:13:11
-[2m   Duration [22m 1.09s
-
-
-[1m[7m[32m PASS [39m[27m[22m[32m Waiting for file changes...[39m
-       [2mpress [22m[1mh[22m[2m to show help[22m[2m, [22m[2mpress [22m[1mq[22m[2m to quit[22m
-       [34mrerun x7[39m
-[2K[1A[2K[G       [90mrerun x7[39m
-[2K[1A[2K[G       [2m[90mrerun x7[39m[22m
-[2K[1A[2K[Gc[3J
-[7m[1m[34m RERUN [39m[22m[27m[2m src/server.ts[22m [34mx8[39m
-
- [32m✓[39m test/user.test.ts [2m ([22m[2m3 tests[22m[2m)[22m[33m 490[2mms[22m[39m
-
-[2m Test Files [22m [1m[32m1 passed[39m[22m[90m (1)[39m
-[2m      Tests [22m [1m[32m3 passed[39m[22m[90m (3)[39m
-[2m   Start at [22m 00:15:37
-[2m   Duration [22m 945ms
-
-
-[1m[7m[32m PASS [39m[27m[22m[32m Waiting for file changes...[39m
-       [2mpress [22m[1mh[22m[2m to show help[22m[2m, [22m[2mpress [22m[1mq[22m[2m to quit[22m
-       [34mrerun x8[39m
-[2K[1A[2K[G       [90mrerun x8[39m
-[2K[1A[2K[G       [2m[90mrerun x8[39m[22m
-[2K[1A[2K[Gc[3J
-[7m[1m[34m RERUN [39m[22m[27m[2m src/server.ts[22m [34mx9[39m
-
- [32m✓[39m test/user.test.ts [2m ([22m[2m3 tests[22m[2m)[22m[33m 480[2mms[22m[39m
-
-[2m Test Files [22m [1m[32m1 passed[39m[22m[90m (1)[39m
-[2m      Tests [22m [1m[32m3 passed[39m[22m[90m (3)[39m
-[2m   Start at [22m 00:15:54
-[2m   Duration [22m 1000ms
-
-
-[1m[7m[32m PASS [39m[27m[22m[32m Waiting for file changes...[39m
-       [2mpress [22m[1mh[22m[2m to show help[22m[2m, [22m[2mpress [22m[1mq[22m[2m to quit[22m
-       [34mrerun x9[39m
-[2K[1A[2K[Gc[3J
-[7m[1m[34m RERUN [39m[22m[27m[2m src/server.ts[22m [34mx10[39m
-
- [32m✓[39m test/user.test.ts [2m ([22m[2m3 tests[22m[2m)[22m[33m 518[2mms[22m[39m
-
-[2m Test Files [22m [1m[32m1 passed[39m[22m[90m (1)[39m
-[2m      Tests [22m [1m[32m3 passed[39m[22m[90m (3)[39m
-[2m   Start at [22m 00:15:55
-[2m   Duration [22m 1.06s
-
-
-[1m[7m[32m PASS [39m[27m[22m[32m Waiting for file changes...[39m
-       [2mpress [22m[1mh[22m[2m to show help[22m[2m, [22m[2mpress [22m[1mq[22m[2m to quit[22m
-       [34mrerun x10[39m
-[2K[1A[2K[G       [90mrerun x10[39m
-[2K[1A[2K[G       [2m[90mrerun x10[39m[22m
-[2K[1A[2K[Gc[3J
-[7m[1m[34m RERUN [39m[22m[27m[2m src/routes/auth.routes.ts[22m [34mx11[39m
-
- [31m❯[39m test/user.test.ts [2m ([22m[2m3 tests[22m[2m)[22m
- [31m❯[39m test/user.test.ts [2m ([22m[2m3 tests[22m[2m)[22m[90m 153[2mms[22m[39m
-
-[31m⎯⎯⎯⎯⎯⎯[1m[7m Failed Suites 1 [27m[22m⎯⎯⎯⎯⎯⎯⎯[39m
-
-[31m[1m[7m FAIL [27m[22m[39m test/user.test.ts [2m[ test/user.test.ts ][22m
-[31m[1mError[22m: Missing handler function for POST:/ route.[39m
-[90m [2m❯[22m Object.route ../../node_modules/fastify/lib/route.js:[2m156:13[22m[39m
-[90m [2m❯[22m Object.prepareRoute ../../node_modules/fastify/lib/route.js:[2m129:18[22m[39m
-[90m [2m❯[22m Object._post [as post] ../../node_modules/fastify/fastify.js:[2m251:34[22m[39m
-[36m [2m❯[22m authRoutes src/routes/auth.routes.ts:[2m11:10[22m[39m
-    [90m  9| [39m  }
-    [90m 10| [39m 
-    [90m 11| [39m  server[33m.[39m[34mpost[39m([32m"/"[39m[33m,[39m {
-    [90m   | [39m         [31m^[39m
-[2m Test Files [22m [1m[31m1 failed[39m[22m[90m (1)[39m
-    [90m 12| [39m      schema[33m:[39m {
-[2m      Tests [22m [90m (3)[39m
-[2m   Start at [22m 00:16:40
-[2m   Duration [22m 626ms
-
-    [90m 13| [39m        body[33m:[39m [34m$ref[39m([32m"createUserSchema"[39m)[33m,[39m
-[90m [2m❯[22m Plugin.exec ../../node_modules/avvio/plugin.js:[2m132:19[22m[39m
-
-[1m[7m[31m FAIL [39m[27m[22m[31m Tests failed. Watching for file changes...[39m
-       [2mpress [22m[1mh[22m[2m to show help[22m[2m, [22m[2mpress [22m[1mq[22m[2m to quit[22m
-[90m [2m❯[22m Boot.loadPlugin ../../node_modules/avvio/plugin.js:[2m274:10[22m[39m
-       [34mrerun x11[39m
-
-[31m[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯[22m[39m
-
-[2K[1A[2K[Gc[3J
-[7m[1m[34m RERUN [39m[22m[27m[2m src/routes/auth.routes.ts[22m [34mx12[39m
-
- [31m❯[39m test/user.test.ts [2m ([22m[2m3 tests[22m[2m)[22m
- [31m❯[39m test/user.test.ts [2m ([22m[2m3 tests[22m[2m)[22m[90m 149[2mms[22m[39m
-
-[31m⎯⎯⎯⎯⎯⎯[1m[7m Failed Suites 1 [27m[22m⎯⎯⎯⎯⎯⎯⎯[39m
-
-[31m[1m[7m FAIL [27m[22m[39m test/user.test.ts [2m[ test/user.test.ts ][22m
-[31m[1mError[22m: Missing handler function for POST:/ route.[39m
-[90m [2m❯[22m Object.route ../../node_modules/fastify/lib/route.js:[2m156:13[22m[39m
-[90m [2m❯[22m Object.prepareRoute ../../node_modules/fastify/lib/route.js:[2m129:18[22m[39m
-[90m [2m❯[22m Object._post [as post] ../../node_modules/fastify/fastify.js:[2m251:34[22m[39m
-[36m [2m❯[22m authRoutes src/routes/auth.routes.ts:[2m11:10[22m[39m
-    [90m  9| [39m  }
-    [90m 10| [39m 
-    [90m 11| [39m  server[33m.[39m[34mpost[39m([32m"/"[39m[33m,[39m {
-[2m Test Files [22m [1m[31m1 failed[39m[22m[90m (1)[39m
-    [90m   | [39m         [31m^[39m
-    [90m 12| [39m      schema[33m:[39m {
-    [90m 13| [39m        body[33m:[39m [34m$ref[39m([32m"createUserSchema"[39m)[33m,[39m
-[2m      Tests [22m [90m (3)[39m
-[2m   Start at [22m 00:16:41
-[2m   Duration [22m 640ms
-
-
-[1m[7m[31m FAIL [39m[27m[22m[31m Tests failed. Watching for file changes...[39m
-       [2mpress [22m[1mh[22m[2m to show help[22m[2m, [22m[2mpress [22m[1mq[22m[2m to quit[22m
-[90m [2m❯[22m Plugin.exec ../../node_modules/avvio/plugin.js:[2m132:19[22m[39m
-[90m [2m❯[22m Boot.loadPlugin ../../node_modules/avvio/plugin.js:[2m274:10[22m[39m
-       [34mrerun x12[39m
-
-[31m[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯[22m[39m
-
-[2K[1A[2K[G       [90mrerun x12[39m
-[2K[1A[2K[G       [2m[90mrerun x12[39m[22m
-[2K[1A[2K[Gc[3J
-[7m[1m[34m RERUN [39m[22m[27m[2m src/routes/auth.routes.ts[22m [34mx13[39m
-
- [31m❯[39m test/user.test.ts [2m ([22m[2m3 tests[22m[2m)[22m
- [31m❯[39m test/user.test.ts [2m ([22m[2m3 tests[22m[2m)[22m[90m 142[2mms[22m[39m
-
-[31m⎯⎯⎯⎯⎯⎯[1m[7m Failed Suites 1 [27m[22m⎯⎯⎯⎯⎯⎯⎯[39m
-
-[31m[1m[7m FAIL [27m[22m[39m test/user.test.ts [2m[ test/user.test.ts ][22m
-[31m[1mError[22m: Missing handler function for POST:/ route.[39m
-[90m [2m❯[22m Object.route ../../node_modules/fastify/lib/route.js:[2m156:13[22m[39m
-[90m [2m❯[22m Object.prepareRoute ../../node_modules/fastify/lib/route.js:[2m129:18[22m[39m
-[90m [2m❯[22m Object._post [as post] ../../node_modules/fastify/fastify.js:[2m251:34[22m[39m
-[36m [2m❯[22m authRoutes src/routes/auth.routes.ts:[2m11:10[22m[39m
-    [90m  9| [39m  }
-    [90m 10| [39m 
-    [90m 11| [39m  server[33m.[39m[34mpost[39m([32m"/"[39m[33m,[39m {
-[2m Test Files [22m [1m[31m1 failed[39m[22m[90m (1)[39m
-    [90m   | [39m         [31m^[39m
-    [90m 12| [39m      schema[33m:[39m {
-[2m      Tests [22m [90m (3)[39m
-[2m   Start at [22m 00:17:07
-[2m   Duration [22m 613ms
-    [90m 13| [39m        body[33m:[39m [34m$ref[39m([32m"loginSchema"[39m)[33m,[39m
-
-
-[1m[7m[31m FAIL [39m[27m[22m[31m Tests failed. Watching for file changes...[39m
-       [2mpress [22m[1mh[22m[2m to show help[22m[2m, [22m[2mpress [22m[1mq[22m[2m to quit[22m
-[90m [2m❯[22m Plugin.exec ../../node_modules/avvio/plugin.js:[2m132:19[22m[39m
-       [34mrerun x13[39m
-[90m [2m❯[22m Boot.loadPlugin ../../node_modules/avvio/plugin.js:[2m274:10[22m[39m
-
-[31m[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯[22m[39m
-
-[2K[1A[2K[G       [90mrerun x13[39m
-[2K[1A[2K[G       [2m[90mrerun x13[39m[22m
-[2K[1A[2K[Gc[3J
-[7m[1m[34m RERUN [39m[22m[27m[2m src/routes/auth.routes.ts[22m [34mx14[39m
-
- [31m❯[39m test/user.test.ts [2m ([22m[2m3 tests[22m[2m)[22m
- [31m❯[39m test/user.test.ts [2m ([22m[2m3 tests[22m[2m)[22m[90m 142[2mms[22m[39m
-
-[31m⎯⎯⎯⎯⎯⎯[1m[7m Failed Suites 1 [27m[22m⎯⎯⎯⎯⎯⎯⎯[39m
-
-[31m[1m[7m FAIL [27m[22m[39m test/user.test.ts [2m[ test/user.test.ts ][22m
-[31m[1mError[22m: Missing handler function for POST:/ route.[39m
-[90m [2m❯[22m Object.route ../../node_modules/fastify/lib/route.js:[2m156:13[22m[39m
-[90m [2m❯[22m Object.prepareRoute ../../node_modules/fastify/lib/route.js:[2m129:18[22m[39m
-[90m [2m❯[22m Object._post [as post] ../../node_modules/fastify/fastify.js:[2m251:34[22m[39m
-[36m [2m❯[22m authRoutes src/routes/auth.routes.ts:[2m11:10[22m[39m
-    [90m  9| [39m  }
-    [90m 10| [39m 
-    [90m 11| [39m  server[33m.[39m[34mpost[39m([32m"/"[39m[33m,[39m {
-    [90m   | [39m         [31m^[39m
-    [90m 12| [39m      schema[33m:[39m {
-    [90m 13| [39m        body[33m:[39m [34m$ref[39m([32m"loginSchema"[39m)[33m,[39m
-[2m Test Files [22m [1m[31m1 failed[39m[22m[90m (1)[39m
-[90m [2m❯[22m Plugin.exec ../../node_modules/avvio/plugin.js:[2m132:19[22m[39m
-[2m      Tests [22m [90m (3)[39m
-[90m [2m❯[22m Boot.loadPlugin ../../node_modules/avvio/plugin.js:[2m274:10[22m[39m
-[2m   Start at [22m 00:17:15
-
-[31m[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯[22m[39m
-[2m   Duration [22m 586ms
-
-
-
-[1m[7m[31m FAIL [39m[27m[22m[31m Tests failed. Watching for file changes...[39m
-       [2mpress [22m[1mh[22m[2m to show help[22m[2m, [22m[2mpress [22m[1mq[22m[2m to quit[22m
-       [34mrerun x14[39m
-[2K[1A[2K[G       [90mrerun x14[39m
-[2K[1A[2K[G       [2m[90mrerun x14[39m[22m
-[2K[1A[2K[Gc[3J
-[7m[1m[34m RERUN [39m[22m[27m[2m src/controllers/auth/auth.controller.ts[22m [34mx15[39m
-
- [31m❯[39m test/user.test.ts [2m ([22m[2m3 tests[22m[2m)[22m
- [31m❯[39m test/user.test.ts [2m ([22m[2m3 tests[22m[2m)[22m[90m 167[2mms[22m[39m
-
-[31m⎯⎯⎯⎯⎯⎯[1m[7m Failed Suites 1 [27m[22m⎯⎯⎯⎯⎯⎯⎯[39m
-
-[31m[1m[7m FAIL [27m[22m[39m test/user.test.ts [2m[ test/user.test.ts ][22m
-[31m[1mError[22m: Missing handler function for POST:/ route.[39m
-[90m [2m❯[22m Object.route ../../node_modules/fastify/lib/route.js:[2m156:13[22m[39m
-[90m [2m❯[22m Object.prepareRoute ../../node_modules/fastify/lib/route.js:[2m129:18[22m[39m
-[90m [2m❯[22m Object._post [as post] ../../node_modules/fastify/fastify.js:[2m251:34[22m[39m
-[36m [2m❯[22m authRoutes src/routes/auth.routes.ts:[2m11:10[22m[39m
-    [90m  9| [39m  }
-    [90m 10| [39m 
-    [90m 11| [39m  server[33m.[39m[34mpost[39m([32m"/"[39m[33m,[39m {
-    [90m   | [39m         [31m^[39m
-    [90m 12| [39m      schema[33m:[39m {
-    [90m 13| [39m        body[33m:[39m [34m$ref[39m([32m"loginSchema"[39m)[33m,[39m
-[90m [2m❯[22m Plugin.exec ../../node_modules/avvio/plugin.js:[2m132:19[22m[39m
-[90m [2m❯[22m Boot.loadPlugin ../../node_modules/avvio/plugin.js:[2m274:10[22m[39m
-
-[2m Test Files [22m [1m[31m1 failed[39m[22m[90m (1)[39m
-[31m[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯[22m[39m
-[2m      Tests [22m [90m (3)[39m
-
-[2m   Start at [22m 00:19:37
-[2m   Duration [22m 641ms
-
-
-[1m[7m[31m FAIL [39m[27m[22m[31m Tests failed. Watching for file changes...[39m
-       [2mpress [22m[1mh[22m[2m to show help[22m[2m, [22m[2mpress [22m[1mq[22m[2m to quit[22m
-       [34mrerun x15[39m
-[2K[1A[2K[Gc[3J
-[7m[1m[34m RERUN [39m[22m[27m[2m src/controllers/auth/auth.controller.ts[22m [34mx16[39m
-
- [31m❯[39m test/user.test.ts [2m ([22m[2m3 tests[22m[2m)[22m
- [31m❯[39m test/user.test.ts [2m ([22m[2m3 tests[22m[2m)[22m[90m 185[2mms[22m[39m
-
-[31m⎯⎯⎯⎯⎯⎯[1m[7m Failed Suites 1 [27m[22m⎯⎯⎯⎯⎯⎯⎯[39m
-
-[31m[1m[7m FAIL [27m[22m[39m test/user.test.ts [2m[ test/user.test.ts ][22m
-[31m[1mError[22m: Missing handler function for POST:/ route.[39m
-[90m [2m❯[22m Object.route ../../node_modules/fastify/lib/route.js:[2m156:13[22m[39m
-[90m [2m❯[22m Object.prepareRoute ../../node_modules/fastify/lib/route.js:[2m129:18[22m[39m
-[90m [2m❯[22m Object._post [as post] ../../node_modules/fastify/fastify.js:[2m251:34[22m[39m
-[36m [2m❯[22m authRoutes src/routes/auth.routes.ts:[2m11:10[22m[39m
-    [90m  9| [39m  }
-    [90m 10| [39m 
-    [90m 11| [39m  server[33m.[39m[34mpost[39m([32m"/"[39m[33m,[39m {
-    [90m   | [39m         [31m^[39m
-[2m Test Files [22m [1m[31m1 failed[39m[22m[90m (1)[39m
-    [90m 12| [39m      schema[33m:[39m {
-[2m      Tests [22m [90m (3)[39m
-[2m   Start at [22m 00:19:38
-    [90m 13| [39m        body[33m:[39m [34m$ref[39m([32m"loginSchema"[39m)[33m,[39m
-[2m   Duration [22m 667ms
-[90m [2m❯[22m Plugin.exec ../../node_modules/avvio/plugin.js:[2m132:19[22m[39m
-[90m [2m❯[22m Boot.loadPlugin ../../node_modules/avvio/plugin.js:[2m274:10[22m[39m
-
-
-[1m[7m[31m FAIL [39m[27m[22m[31m Tests failed. Watching for file changes...[39m
-       [2mpress [22m[1mh[22m[2m to show help[22m[2m, [22m[2mpress [22m[1mq[22m[2m to quit[22m
-
-[31m[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯[22m[39m
-       [34mrerun x16[39m
-
-[2K[1A[2K[G       [90mrerun x16[39m
-[2K[1A[2K[G       [2m[90mrerun x16[39m[22m
-[2K[1A[2K[Gc[3J
-[7m[1m[34m RERUN [39m[22m[27m[2m src/routes/auth.routes.ts[22m [34mx17[39m
-
- [31m❯[39m test/user.test.ts [2m ([22m[2m3 tests[22m[2m)[22m
- [31m❯[39m test/user.test.ts [2m ([22m[2m3 tests[22m[2m)[22m[90m 151[2mms[22m[39m
-
-[31m⎯⎯⎯⎯⎯⎯[1m[7m Failed Suites 1 [27m[22m⎯⎯⎯⎯⎯⎯⎯[39m
-
-[31m[1m[7m FAIL [27m[22m[39m test/user.test.ts [2m[ test/user.test.ts ][22m
-[31m[1mReferenceError[22m: registerUserHandler is not defined[39m
-[36m [2m❯[22m authRoutes src/routes/auth.routes.ts:[2m17:8[22m[39m
-    [90m 15| [39m        [90m// response: { 201: $ref("createUserResponseSchema") },[39m
-    [90m 16| [39m      }[33m,[39m
-    [90m 17| [39m    }[33m,[39m registerUserHandler
-    [90m   | [39m       [31m^[39m
-    [90m 18| [39m  )[33m;[39m
-    [90m 19| [39m
-[90m [2m❯[22m Plugin.exec ../../node_modules/avvio/plugin.js:[2m132:19[22m[39m
-[2m Test Files [22m [1m[31m1 failed[39m[22m[90m (1)[39m
-[90m [2m❯[22m Boot.loadPlugin ../../node_modules/avvio/plugin.js:[2m274:10[22m[39m
-
-[2m      Tests [22m [90m (3)[39m
-[2m   Start at [22m 00:19:41
-[2m   Duration [22m 690ms
-[31m[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯[22m[39m
-
-
-
-[1m[7m[31m FAIL [39m[27m[22m[31m Tests failed. Watching for file changes...[39m
-       [2mpress [22m[1mh[22m[2m to show help[22m[2m, [22m[2mpress [22m[1mq[22m[2m to quit[22m
-       [34mrerun x17[39m
-[2K[1A[2K[Gc[3J
-[7m[1m[34m RERUN [39m[22m[27m[2m src/routes/auth.routes.ts[22m [34mx18[39m
-
- [31m❯[39m test/user.test.ts [2m ([22m[2m3 tests[22m[2m)[22m
- [31m❯[39m test/user.test.ts [2m ([22m[2m3 tests[22m[2m)[22m[90m 157[2mms[22m[39m
-
-[31m⎯⎯⎯⎯⎯⎯[1m[7m Failed Suites 1 [27m[22m⎯⎯⎯⎯⎯⎯⎯[39m
-
-[31m[1m[7m FAIL [27m[22m[39m test/user.test.ts [2m[ test/user.test.ts ][22m
-[31m[1mReferenceError[22m: registerUserHandler is not defined[39m
-[36m [2m❯[22m authRoutes src/routes/auth.routes.ts:[2m17:8[22m[39m
-    [90m 15| [39m        [90m// response: { 201: $ref("createUserResponseSchema") },[39m
-[2m Test Files [22m [1m[31m1 failed[39m[22m[90m (1)[39m
-    [90m 16| [39m      }[33m,[39m
-    [90m 17| [39m    }[33m,[39m authHandler
-[2m      Tests [22m [90m (3)[39m
-[2m   Start at [22m 00:19:42
-[2m   Duration [22m 618ms
-
-
-[1m[7m[31m FAIL [39m[27m[22m[31m Tests failed. Watching for file changes...[39m
-    [90m   | [39m       [31m^[39m
-    [90m 18| [39m  )[33m;[39m
-       [2mpress [22m[1mh[22m[2m to show help[22m[2m, [22m[2mpress [22m[1mq[22m[2m to quit[22m
-    [90m 19| [39m
-       [34mrerun x18[39m
-[90m [2m❯[22m Plugin.exec ../../node_modules/avvio/plugin.js:[2m132:19[22m[39m
-[90m [2m❯[22m Boot.loadPlugin ../../node_modules/avvio/plugin.js:[2m274:10[22m[39m
-
-[31m[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯[22m[39m
-
-[2K[1A[2K[Gc[3J
-[7m[1m[34m RERUN [39m[22m[27m[2m src/routes/auth.routes.ts[22m [34mx19[39m
-
- [32m✓[39m test/user.test.ts [2m ([22m[2m3 tests[22m[2m)[22m[33m 515[2mms[22m[39m
-
-[2m Test Files [22m [1m[32m1 passed[39m[22m[90m (1)[39m
-[2m      Tests [22m [1m[32m3 passed[39m[22m[90m (3)[39m
-[2m   Start at [22m 00:19:43
-[2m   Duration [22m 1.08s
-
-
-[1m[7m[32m PASS [39m[27m[22m[32m Waiting for file changes...[39m
-       [2mpress [22m[1mh[22m[2m to show help[22m[2m, [22m[2mpress [22m[1mq[22m[2m to quit[22m
-       [34mrerun x19[39m
-[2K[1A[2K[Gc[3J
-[7m[1m[34m RERUN [39m[22m[27m[2m src/routes/auth.routes.ts[22m [34mx20[39m
-
- [32m✓[39m test/user.test.ts [2m ([22m[2m3 tests[22m[2m)[22m[33m 484[2mms[22m[39m
-
-[2m Test Files [22m [1m[32m1 passed[39m[22m[90m (1)[39m
-[2m      Tests [22m [1m[32m3 passed[39m[22m[90m (3)[39m
-[2m   Start at [22m 00:19:44
-[2m   Duration [22m 1.00s
-
-
-[1m[7m[32m PASS [39m[27m[22m[32m Waiting for file changes...[39m
-       [2mpress [22m[1mh[22m[2m to show help[22m[2m, [22m[2mpress [22m[1mq[22m[2m to quit[22m
-       [34mrerun x20[39m
-[2K[1A[2K[G       [90mrerun x20[39m
-[2K[1A[2K[G       [2m[90mrerun x20[39m[22m
-[2K[1A[2K[Gc[3J
-[7m[1m[34m RERUN [39m[22m[27m[2m src/routes/auth.routes.ts[22m [34mx21[39m
-
- [32m✓[39m test/user.test.ts [2m ([22m[2m3 tests[22m[2m)[22m[33m 485[2mms[22m[39m
-
-[2m Test Files [22m [1m[32m1 passed[39m[22m[90m (1)[39m
-[2m      Tests [22m [1m[32m3 passed[39m[22m[90m (3)[39m
-[2m   Start at [22m 00:19:47
-[2m   Duration [22m 939ms
-
-
-[1m[7m[32m PASS [39m[27m[22m[32m Waiting for file changes...[39m
-       [2mpress [22m[1mh[22m[2m to show help[22m[2m, [22m[2mpress [22m[1mq[22m[2m to quit[22m
-       [34mrerun x21[39m
-[2K[1A[2K[G       [90mrerun x21[39m
-[2K[1A[2K[G       [2m[90mrerun x21[39m[22m
-[2K[1A[2K[Gc[3J
-[7m[1m[34m RERUN [39m[22m[27m[2m src/controllers/auth/auth.schema.ts[22m [34mx22[39m
-
- [31m❯[39m test/user.test.ts [2m ([22m[2m3 tests[22m[2m)[22m
- [31m❯[39m test/user.test.ts [2m ([22m[2m3 tests[22m[2m)[22m[90m 139[2mms[22m[39m
-
-[31m⎯⎯⎯⎯⎯⎯[1m[7m Failed Suites 1 [27m[22m⎯⎯⎯⎯⎯⎯⎯[39m
-
-[31m[1m[7m FAIL [27m[22m[39m test/user.test.ts [2m[ test/user.test.ts ][22m
-[31m[1mTypeError[22m: userSchemas is not iterable[39m
-[36m [2m❯[22m authRoutes src/routes/auth.routes.ts:[2m7:24[22m[39m
-    [90m  5| [39m[35masync[39m [35mfunction[39m [34mauthRoutes[39m(server[33m:[39m [33mFastifyInstance[39m) {
-    [90m  6| [39m
-[2m Test Files [22m [1m[31m1 failed[39m[22m[90m (1)[39m
-    [90m  7| [39m  [35mfor[39m ([35mconst[39m schema [35mof[39m userSchemas) {
-[2m      Tests [22m [90m (3)[39m
-[2m   Start at [22m 00:25:32
-[2m   Duration [22m 594ms
-    [90m   | [39m                       [31m^[39m
-
-    [90m  8| [39m    server[33m.[39m[34maddSchema[39m(schema)[33m;[39m
-    [90m  9| [39m  }
-
-[1m[7m[31m FAIL [39m[27m[22m[31m Tests failed. Watching for file changes...[39m
-       [2mpress [22m[1mh[22m[2m to show help[22m[2m, [22m[2mpress [22m[1mq[22m[2m to quit[22m
-       [34mrerun x22[39m
-[90m [2m❯[22m Plugin.exec ../../node_modules/avvio/plugin.js:[2m132:19[22m[39m
-[90m [2m❯[22m Boot.loadPlugin ../../node_modules/avvio/plugin.js:[2m274:10[22m[39m
-
-[31m[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯[22m[39m
-
-[2K[1A[2K[Gc[3J
-[7m[1m[34m RERUN [39m[22m[27m[2m src/controllers/auth/auth.schema.ts[22m [34mx23[39m
-
- [31m❯[39m test/user.test.ts [2m ([22m[2m3 tests[22m[2m)[22m
- [31m❯[39m test/user.test.ts [2m ([22m[2m3 tests[22m[2m)[22m[90m 138[2mms[22m[39m
-
-[31m⎯⎯⎯⎯⎯⎯[1m[7m Failed Suites 1 [27m[22m⎯⎯⎯⎯⎯⎯⎯[39m
-
-[31m[1m[7m FAIL [27m[22m[39m test/user.test.ts [2m[ test/user.test.ts ][22m
-[31m[1mTypeError[22m: userSchemas is not iterable[39m
-[36m [2m❯[22m authRoutes src/routes/auth.routes.ts:[2m7:24[22m[39m
-    [90m  5| [39m[35masync[39m [35mfunction[39m [34mauthRoutes[39m(server[33m:[39m [33mFastifyInstance[39m) {
-    [90m  6| [39m
-    [90m  7| [39m  [35mfor[39m ([35mconst[39m schema [35mof[39m userSchemas) {
-    [90m   | [39m                       [31m^[39m
-[2m Test Files [22m [1m[31m1 failed[39m[22m[90m (1)[39m
-    [90m  8| [39m    server[33m.[39m[34maddSchema[39m(schema)[33m;[39m
-    [90m  9| [39m  }
-[2m      Tests [22m [90m (3)[39m
-[2m   Start at [22m 00:25:33
-[2m   Duration [22m 609ms
-
-
-[1m[7m[31m FAIL [39m[27m[22m[31m Tests failed. Watching for file changes...[39m
-       [2mpress [22m[1mh[22m[2m to show help[22m[2m, [22m[2mpress [22m[1mq[22m[2m to quit[22m
-[90m [2m❯[22m Plugin.exec ../../node_modules/avvio/plugin.js:[2m132:19[22m[39m
-[90m [2m❯[22m Boot.loadPlugin ../../node_modules/avvio/plugin.js:[2m274:10[22m[39m
-
-       [34mrerun x23[39m
-[31m[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯[22m[39m
-
-[2K[1A[2K[G       [90mrerun x23[39m
-[2K[1A[2K[G       [2m[90mrerun x23[39m[22m
-[2K[1A[2K[Gc[3J
-[7m[1m[34m RERUN [39m[22m[27m[2m src/routes/auth.routes.ts[22m [34mx24[39m
-
- [31m❯[39m test/user.test.ts [2m ([22m[2m3 tests[22m[2m)[22m
- [31m❯[39m test/user.test.ts [2m ([22m[2m3 tests[22m[2m)[22m[90m 147[2mms[22m[39m
-
-[31m⎯⎯⎯⎯⎯⎯[1m[7m Failed Suites 1 [27m[22m⎯⎯⎯⎯⎯⎯⎯[39m
-
-[31m[1m[7m FAIL [27m[22m[39m test/user.test.ts [2m[ test/user.test.ts ][22m
-[31m[1mReferenceError[22m: userSchemas is not defined[39m
-[36m [2m❯[22m authRoutes src/routes/auth.routes.ts:[2m7:24[22m[39m
-    [90m  5| [39m[35masync[39m [35mfunction[39m [34mauthRoutes[39m(server[33m:[39m [33mFastifyInstance[39m) {
-    [90m  6| [39m
-[2m Test Files [22m [1m[31m1 failed[39m[22m[90m (1)[39m
-    [90m  7| [39m  [35mfor[39m ([35mconst[39m schema [35mof[39m userSchemas) {
-    [90m   | [39m                       [31m^[39m
-    [90m  8| [39m    server[33m.[39m[34maddSchema[39m(schema)[33m;[39m
-[2m      Tests [22m [90m (3)[39m
-    [90m  9| [39m  }
-[2m   Start at [22m 00:25:38
-[90m [2m❯[22m Plugin.exec ../../node_modules/avvio/plugin.js:[2m132:19[22m[39m
-[2m   Duration [22m 623ms
-
-
-[1m[7m[31m FAIL [39m[27m[22m[31m Tests failed. Watching for file changes...[39m
-       [2mpress [22m[1mh[22m[2m to show help[22m[2m, [22m[2mpress [22m[1mq[22m[2m to quit[22m
-       [34mrerun x24[39m
-[90m [2m❯[22m Boot.loadPlugin ../../node_modules/avvio/plugin.js:[2m274:10[22m[39m
-
-[31m[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯[22m[39m
-
-[2K[1A[2K[G       [90mrerun x24[39m
-[2K[1A[2K[Gc[3J
-[7m[1m[34m RERUN [39m[22m[27m[2m src/routes/auth.routes.ts[22m [34mx25[39m
-
- [32m✓[39m test/user.test.ts [2m ([22m[2m3 tests[22m[2m)[22m[33m 493[2mms[22m[39m
-
-[2m Test Files [22m [1m[32m1 passed[39m[22m[90m (1)[39m
-[2m      Tests [22m [1m[32m3 passed[39m[22m[90m (3)[39m
-[2m   Start at [22m 00:25:40
-[2m   Duration [22m 984ms
-
-
-[1m[7m[32m PASS [39m[27m[22m[32m Waiting for file changes...[39m
-       [2mpress [22m[1mh[22m[2m to show help[22m[2m, [22m[2mpress [22m[1mq[22m[2m to quit[22m
-       [34mrerun x25[39m
-[2K[1A[2K[Gc[3J
-[7m[1m[34m RERUN [39m[22m[27m[2m src/routes/auth.routes.ts[22m [34mx26[39m
-
- [32m✓[39m test/user.test.ts [2m ([22m[2m3 tests[22m[2m)[22m[33m 486[2mms[22m[39m
-
-[2m Test Files [22m [1m[32m1 passed[39m[22m[90m (1)[39m
-[2m      Tests [22m [1m[32m3 passed[39m[22m[90m (3)[39m
-[2m   Start at [22m 00:25:41
-[2m   Duration [22m 916ms
-
-
-[1m[7m[32m PASS [39m[27m[22m[32m Waiting for file changes...[39m
-       [2mpress [22m[1mh[22m[2m to show help[22m[2m, [22m[2mpress [22m[1mq[22m[2m to quit[22m
-       [34mrerun x26[39m
-[2K[1A[2K[G       [90mrerun x26[39m
-[2K[1A[2K[G       [2m[90mrerun x26[39m[22m
-[2K[1A[2K[Gc[3J
-[7m[1m[34m RERUN [39m[22m[27m[2m src/controllers/auth/auth.controller.ts[22m [34mx27[39m
-
- [32m✓[39m test/user.test.ts [2m ([22m[2m3 tests[22m[2m)[22m[33m 488[2mms[22m[39m
-
-[2m Test Files [22m [1m[32m1 passed[39m[22m[90m (1)[39m
-[2m      Tests [22m [1m[32m3 passed[39m[22m[90m (3)[39m
-[2m   Start at [22m 00:27:17
-[2m   Duration [22m 955ms
-
-
-[1m[7m[32m PASS [39m[27m[22m[32m Waiting for file changes...[39m
-       [2mpress [22m[1mh[22m[2m to show help[22m[2m, [22m[2mpress [22m[1mq[22m[2m to quit[22m
-       [34mrerun x27[39m
-[2K[1A[2K[Gc[3J
-[7m[1m[34m RERUN [39m[22m[27m[2m src/controllers/auth/auth.controller.ts[22m [34mx28[39m
-
- [32m✓[39m test/user.test.ts [2m ([22m[2m3 tests[22m[2m)[22m[33m 479[2mms[22m[39m
-
-[2m Test Files [22m [1m[32m1 passed[39m[22m[90m (1)[39m
-[2m      Tests [22m [1m[32m3 passed[39m[22m[90m (3)[39m
-[2m   Start at [22m 00:27:19
-[2m   Duration [22m 982ms
-
-
-[1m[7m[32m PASS [39m[27m[22m[32m Waiting for file changes...[39m
-       [2mpress [22m[1mh[22m[2m to show help[22m[2m, [22m[2mpress [22m[1mq[22m[2m to quit[22m
-       [34mrerun x28[39m
-[2K[1A[2K[G       [90mrerun x28[39m
-[2K[1A[2K[G       [2m[90mrerun x28[39m[22m
-[2K[1A[2K[Gc[3J
-[7m[1m[34m RERUN [39m[22m[27m[2m src/controllers/auth/auth.controller.ts[22m [34mx29[39m
-
- [32m✓[39m test/user.test.ts [2m ([22m[2m3 tests[22m[2m)[22m[33m 541[2mms[22m[39m
-
-[2m Test Files [22m [1m[32m1 passed[39m[22m[90m (1)[39m
-[2m      Tests [22m [1m[32m3 passed[39m[22m[90m (3)[39m
-[2m   Start at [22m 00:27:32
-[2m   Duration [22m 998ms
-
-
-[1m[7m[32m PASS [39m[27m[22m[32m Waiting for file changes...[39m
-       [2mpress [22m[1mh[22m[2m to show help[22m[2m, [22m[2mpress [22m[1mq[22m[2m to quit[22m
-       [34mrerun x29[39m
-[2K[1A[2K[Gc[3J
-[7m[1m[34m RERUN [39m[22m[27m[2m src/controllers/auth/auth.controller.ts[22m [34mx30[39m
-
- [32m✓[39m test/user.test.ts [2m ([22m[2m3 tests[22m[2m)[22m[33m 584[2mms[22m[39m
-
-[2m Test Files [22m [1m[32m1 passed[39m[22m[90m (1)[39m
-[2m      Tests [22m [1m[32m3 passed[39m[22m[90m (3)[39m
-[2m   Start at [22m 00:27:33
-[2m   Duration [22m 1.09s
-
-
-[1m[7m[32m PASS [39m[27m[22m[32m Waiting for file changes...[39m
-       [2mpress [22m[1mh[22m[2m to show help[22m[2m, [22m[2mpress [22m[1mq[22m[2m to quit[22m
-       [34mrerun x30[39m
-[2K[1A[2K[G       [90mrerun x30[39m
-[2K[1A[2K[G       [2m[90mrerun x30[39m[22m
-[2K[1A[2K[Gc[3J
-[7m[1m[34m RERUN [39m[22m[27m[2m src/routes/auth.routes.ts[22m [34mx31[39m
-
- [32m✓[39m test/user.test.ts [2m ([22m[2m3 tests[22m[2m)[22m[33m 488[2mms[22m[39m
-
-[2m Test Files [22m [1m[32m1 passed[39m[22m[90m (1)[39m
-[2m      Tests [22m [1m[32m3 passed[39m[22m[90m (3)[39m
-[2m   Start at [22m 00:31:47
-[2m   Duration [22m 962ms
-
-
-[1m[7m[32m PASS [39m[27m[22m[32m Waiting for file changes...[39m
-       [2mpress [22m[1mh[22m[2m to show help[22m[2m, [22m[2mpress [22m[1mq[22m[2m to quit[22m
-       [34mrerun x31[39m
-[2K[1A[2K[Gc[3J
-[7m[1m[34m RERUN [39m[22m[27m[2m src/routes/auth.routes.ts[22m [34mx32[39m
-
- [32m✓[39m test/user.test.ts [2m ([22m[2m3 tests[22m[2m)[22m[33m 507[2mms[22m[39m
-
-[2m Test Files [22m [1m[32m1 passed[39m[22m[90m (1)[39m
-[2m      Tests [22m [1m[32m3 passed[39m[22m[90m (3)[39m
-[2m   Start at [22m 00:31:48
-[2m   Duration [22m 1.05s
-
-
-[1m[7m[32m PASS [39m[27m[22m[32m Waiting for file changes...[39m
-       [2mpress [22m[1mh[22m[2m to show help[22m[2m, [22m[2mpress [22m[1mq[22m[2m to quit[22m
-       [34mrerun x32[39m
-[2K[1A[2K[G       [90mrerun x32[39m
-[2K[1A[2K[G       [2m[90mrerun x32[39m[22m
-[2K[1A[2K[Gc[3J
-[7m[1m[34m RERUN [39m[22m[27m[2m src/routes/auth.routes.ts[22m [34mx33[39m
-
- [32m✓[39m test/user.test.ts [2m ([22m[2m3 tests[22m[2m)[22m[33m 484[2mms[22m[39m
-
-[2m Test Files [22m [1m[32m1 passed[39m[22m[90m (1)[39m
-[2m      Tests [22m [1m[32m3 passed[39m[22m[90m (3)[39m
-[2m   Start at [22m 00:32:00
-[2m   Duration [22m 958ms
-
-
-[1m[7m[32m PASS [39m[27m[22m[32m Waiting for file changes...[39m
-       [2mpress [22m[1mh[22m[2m to show help[22m[2m, [22m[2mpress [22m[1mq[22m[2m to quit[22m
-       [34mrerun x33[39m
-[2K[1A[2K[Gc[3J
-[7m[1m[34m RERUN [39m[22m[27m[2m src/routes/auth.routes.ts[22m [34mx34[39m
-
- [32m✓[39m test/user.test.ts [2m ([22m[2m3 tests[22m[2m)[22m[33m 486[2mms[22m[39m
-
-[2m Test Files [22m [1m[32m1 passed[39m[22m[90m (1)[39m
-[2m      Tests [22m [1m[32m3 passed[39m[22m[90m (3)[39m
-[2m   Start at [22m 00:32:02
-[2m   Duration [22m 952ms
-
-
-[1m[7m[32m PASS [39m[27m[22m[32m Waiting for file changes...[39m
-       [2mpress [22m[1mh[22m[2m to show help[22m[2m, [22m[2mpress [22m[1mq[22m[2m to quit[22m
-       [34mrerun x34[39m
-[2K[1A[2K[G       [90mrerun x34[39m
-[2K[1A[2K[G       [2m[90mrerun x34[39m[22m
-[2K[1A[2K[Gc[3J
-[7m[1m[34m RERUN [39m[22m[27m[2m src/controllers/auth/auth.controller.ts[22m [34mx35[39m
-
- [32m✓[39m test/user.test.ts [2m ([22m[2m3 tests[22m[2m)[22m[33m 536[2mms[22m[39m
-
-[2m Test Files [22m [1m[32m1 passed[39m[22m[90m (1)[39m
-[2m      Tests [22m [1m[32m3 passed[39m[22m[90m (3)[39m
-[2m   Start at [22m 00:32:22
-[2m   Duration [22m 1.02s
-
-
-[1m[7m[32m PASS [39m[27m[22m[32m Waiting for file changes...[39m
-       [2mpress [22m[1mh[22m[2m to show help[22m[2m, [22m[2mpress [22m[1mq[22m[2m to quit[22m
-       [34mrerun x35[39m
-[2K[1A[2K[G       [90mrerun x35[39m
-[2K[1A[2K[G       [2m[90mrerun x35[39m[22m
+[?25l[2J[m[H]0;npm[?25h]0;npm prefix]0;npm[?25l
+> fastify-meta-rtc@1.0.0 test
+> vitest[5;1H[K]0;npm run test[?25h]0;C:\Windows\system32\cmd.exe ]0;node (vitest)[33mThe CJS build of Vite's Node API is deprecated. See https://vitejs.dev/guide/troubleshooting.html#vite-cjs-node-api-deprecated for more details.
+[m[?25l[34m[1m[7m
+ DEV [m [34mv2.1.1 [90mC:/Users/joaor/Documents/Joao4584/Projetos/meta-rtc/apps/server[10;1H[?25h[m]0;node (vitest 1)]0;node (vitest 6) [90m· [m[2mtest/[22mauth[2m.test.ts (6)[22m
+ [90m· [m[2mtest/[22muser[2m.test.ts (3)[?25l[22m[10;1H [33m❯ [m[2mtest/[22mauth[2m.test.ts (6)[22m[K
+   [33m\ [m[2m[ beforeAll ][22m[K
+   [90m· [mUser Authentication[2m (6)[22m[K
+ [90m· [m[2mtest/[22muser[2m.test.ts (3)[22m[10;1H [33m❯ [m[2mtest/[22mauth[2m.test.ts (6)[22m[K
+   [33m| [m[2m[ beforeAll ][22m[K
+   [90m· [mUser Authentication[2m (6)[22m[K
+ [33m❯ [m[2mtest/[22muser[2m.test.ts (3)[22m[K
+   [33m❯ [mUser Registration[2m (3)[22m[K
+     [33m\ [mshould register a new user successfully
+     [90m· [mshould return 400 for missing fields
+     [90m· [mshould return an existing user error[10;1H [33m❯ [m[2mtest/[22mauth[2m.test.ts (6)[22m[K
+   [33m/ [m[2m[ beforeAll ][22m[K
+   [90m· [mUser Authentication[2m (6)[22m[K
+ [33m❯ [m[2mtest/[22muser[2m.test.ts (3)[22m[K
+   [33m❯ [mUser Registration[2m (3)[22m[K
+     [33m| [mshould register a new user successfully[K
+     [90m· [mshould return 400 for missing fields[K
+     [90m· [mshould return an existing user error[K
+[K[102C[10;1H [33m❯ [m[2mtest/[22mauth[2m.test.ts (6)[22m[K
+   [33m- [m[2m[ beforeAll ][22m[K
+   [90m· [mUser Authentication[2m (6)[22m[K
+ [33m❯ [m[2mtest/[22muser[2m.test.ts (3)[22m[K
+   [33m❯ [mUser Registration[2m (3)[22m[K
+     [33m/ [mshould register a new user successfully[K
+     [90m· [mshould return 400 for missing fields[K
+     [90m· [mshould return an existing user error[K
+[K[102C[10;1H [33m❯ [m[2mtest/[22mauth[2m.test.ts (6)[22m[K
+   [33m\ [m[2m[ beforeAll ][22m[K
+   [90m· [mUser Authentication[2m (6)[22m[K
+ [33m❯ [m[2mtest/[22muser[2m.test.ts (3)[22m[K
+   [33m❯ [mUser Registration[2m (3)[22m[K
+     [33m- [mshould register a new user successfully[K
+     [90m· [mshould return 400 for missing fields[K
+     [90m· [mshould return an existing user error[K
+[K[102C[10;1H [33m❯ [m[2mtest/[22mauth[2m.test.ts (6)[22m[K
+   [33m| [m[2m[ beforeAll ][22m[K
+   [90m· [mUser Authentication[2m (6)[22m[K
+ [33m❯ [m[2mtest/[22muser[2m.test.ts (3)[22m[K
+   [33m❯ [mUser Registration[2m (3)[22m[K
+     [33m\ [mshould register a new user successfully[K
+     [90m· [mshould return 400 for missing fields[K
+     [90m· [mshould return an existing user error[K
+[K[102C[10;1H [33m❯ [m[2mtest/[22mauth[2m.test.ts (6)[22m[K
+   [33m/ [m[2m[ beforeAll ][22m[K
+   [90m· [mUser Authentication[2m (6)[22m[K
+ [33m❯ [m[2mtest/[22muser[2m.test.ts (3)[22m[K
+   [33m❯ [mUser Registration[2m (3)[22m[K
+     [33m| [mshould register a new user successfully[K
+     [90m· [mshould return 400 for missing fields[K
+     [90m· [mshould return an existing user error[K
+[K[102C[10;1H [33m❯ [m[2mtest/[22mauth[2m.test.ts (6)[22m[K
+   [33m- [m[2m[ beforeAll ][22m[K
+   [90m· [mUser Authentication[2m (6)[22m[K
+ [33m❯ [m[2mtest/[22muser[2m.test.ts (3)[22m[K
+   [33m❯ [mUser Registration[2m (3)[22m[K
+     [33m/ [mshould register a new user successfully[K
+     [90m· [mshould return 400 for missing fields[K
+     [90m· [mshould return an existing user error[K
+[K[102C[10;1H [33m❯ [m[2mtest/[22mauth[2m.test.ts (6)[22m[K
+   [33m\ [m[2m[ beforeAll ][22m[K
+   [90m· [mUser Authentication[2m (6)[22m[K
+ [33m❯ [m[2mtest/[22muser[2m.test.ts (3)[22m[K
+   [33m❯ [mUser Registration[2m (3)[22m[K
+     [33m- [mshould register a new user successfully[K
+     [90m· [mshould return 400 for missing fields[K
+     [90m· [mshould return an existing user error[K
+[K[102C[10;1H [33m❯ [m[2mtest/[22mauth[2m.test.ts (6)[22m[K
+   [33m| [m[2m[ beforeAll ][22m[K
+   [90m· [mUser Authentication[2m (6)[22m[K
+ [33m❯ [m[2mtest/[22muser[2m.test.ts (3)[22m[K
+   [33m❯ [mUser Registration[2m (3)[22m[K
+     [33m\ [mshould register a new user successfully[K
+     [90m· [mshould return 400 for missing fields[K
+     [90m· [mshould return an existing user error[K
+[K[102C[10;1H [33m❯ [m[2mtest/[22mauth[2m.test.ts (6)[22m[K
+   [33m/ [m[2m[ beforeAll ][22m[K
+   [90m· [mUser Authentication[2m (6)[22m[K
+ [33m❯ [m[2mtest/[22muser[2m.test.ts (3)[22m[K
+   [33m❯ [mUser Registration[2m (3)[22m[K
+     [33m| [mshould register a new user successfully[K
+     [90m· [mshould return 400 for missing fields[K
+     [90m· [mshould return an existing user error[K
+[K[102C[10;1H [33m❯ [m[2mtest/[22mauth[2m.test.ts (6)[22m[K
+   [33m- [m[2m[ beforeAll ][22m[K
+   [90m· [mUser Authentication[2m (6)[22m[K
+ [33m❯ [m[2mtest/[22muser[2m.test.ts (3)[22m[K
+   [33m❯ [mUser Registration[2m (3)[22m[K
+     [33m/ [mshould register a new user successfully[K
+     [90m· [mshould return 400 for missing fields[K
+     [90m· [mshould return an existing user error[K
+[K[102C[10;1H [33m❯ [m[2mtest/[22mauth[2m.test.ts (6)[22m[K
+   [33m\ [m[2m[ beforeAll ][22m[K
+   [90m· [mUser Authentication[2m (6)[22m[K
+ [33m❯ [m[2mtest/[22muser[2m.test.ts (3)[22m[K
+   [33m❯ [mUser Registration[2m (3)[22m[K
+     [33m- [mshould register a new user successfully[K
+     [90m· [mshould return 400 for missing fields[K
+     [90m· [mshould return an existing user error[K
+[K[102C[10;1H [33m❯ [m[2mtest/[22mauth[2m.test.ts (6)[22m[K
+   [33m| [m[2m[ beforeAll ][22m[K
+   [90m· [mUser Authentication[2m (6)[22m[K
+ [33m❯ [m[2mtest/[22muser[2m.test.ts (3)[22m[K
+   [33m❯ [mUser Registration[2m (3)[22m[K
+     [33m\ [mshould register a new user successfully[K
+     [90m· [mshould return 400 for missing fields[K
+     [90m· [mshould return an existing user error[K
+[K[102C[10;1H [33m❯ [m[2mtest/[22mauth[2m.test.ts (6)[22m[K
+   [33m/ [m[2m[ beforeAll ][22m[K
+   [90m· [mUser Authentication[2m (6)[22m[K
+ [33m❯ [m[2mtest/[22muser[2m.test.ts (3)[22m[K
+   [33m❯ [mUser Registration[2m (3)[22m[K
+     [33m| [mshould register a new user successfully[K
+     [90m· [mshould return 400 for missing fields[K
+     [90m· [mshould return an existing user error[K
+[K[102C[10;1H [33m❯ [m[2mtest/[22mauth[2m.test.ts (6)[22m[K
+   [33m- [m[2m[ beforeAll ][22m[K
+   [90m· [mUser Authentication[2m (6)[22m[K
+ [33m❯ [m[2mtest/[22muser[2m.test.ts (3)[22m[K
+   [33m❯ [mUser Registration[2m (3)[22m[K
+     [33m/ [mshould register a new user successfully[K
+     [90m· [mshould return 400 for missing fields[K
+     [90m· [mshould return an existing user error[K
+[K[102C[10;1H [33m❯ [m[2mtest/[22mauth[2m.test.ts (6)[22m[K
+   [33m\ [m[2m[ beforeAll ][22m[K
+   [90m· [mUser Authentication[2m (6)[22m[K
+ [33m❯ [m[2mtest/[22muser[2m.test.ts (3)[22m[K
+   [33m❯ [mUser Registration[2m (3)[22m[K
+     [33m- [mshould register a new user successfully[K
+     [90m· [mshould return 400 for missing fields[K
+     [90m· [mshould return an existing user error[K
+[K[102C

@@ -29,5 +29,18 @@ export default {
         pt: "Portuguese"
       }
     }
-  }
+  },
+  auth: {
+    signIn: 'Sign in to your account',
+    yourEmail: 'Your email or user',
+    placeholderEmail: 'name@company.com',
+    password: 'Password',
+    rememberMe: 'Remember me',
+    forgotPassword: 'Forgot password?',
+    signInButton: 'Sign in',
+    dontHaveAccount: "Don’t have an account yet?",
+    signUp: 'Sign up',
+    invalidUser: "Invalid user",
+    shortPassword: "Invalid password"
+  },
 } as const;

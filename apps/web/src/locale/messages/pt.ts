@@ -29,5 +29,18 @@ export default {
         pt: "Português"
       }
     }
-  }
+  },
+  auth: {
+    signIn: 'Entrar na sua conta',
+    yourEmail: 'Seu e-mail ou Usuario',
+    placeholderEmail: 'nome@empresa.com',
+    password: 'Senha',
+    rememberMe: 'Lembre-se de mim',
+    forgotPassword: 'Esqueceu a senha?',
+    signInButton: 'Entrar',
+    dontHaveAccount: 'Ainda não tem uma conta?',
+    signUp: 'Inscreva-se',
+    invalidUser: "Usuario invalido",
+    shortPassword: "Senha invalida"
+  },
 } as const;
