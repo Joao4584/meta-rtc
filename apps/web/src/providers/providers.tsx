@@ -6,6 +6,7 @@ import { ReactQueryDevtools } from '@tanstack/react-query-devtools'
 
 import { I18nProviderClient } from "@/locale/client";
 import { ThemeProvider } from './theme-provider'
+import { Toaster } from '@/components/ui/sonner';
 
 
 type ProviderProps = {
@@ -30,7 +31,17 @@ export function Providers({ locale, children }: ProviderProps) {
           {children}
         </ThemeProvider>
       </QueryClientProvider>
-
+      <Toaster position='top-right' visibleToasts={3} pauseWhenPageIsHidden duration={3600} gap={10}
+        toastOptions={{
+          closeButton: true,
+          classNames: {
+            closeButton: "absolute left-80 top-1/2 border-0 close-button dark:hover:opacity-20",
+            icon: "mr-4 ml-1",
+            description: "text-slate-500 text-xs",
+            toast: `dark:bg-gray-800 dark:bg-opacity-60 dark:backdrop-blur-sm dark:border-gray-700 dark:text-gray-400 text-gray-700`
+          }
+        }}
+      />
     </I18nProviderClient>
   )
 }

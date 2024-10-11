@@ -1,0 +1,10 @@
+{
+  "name": "@project/env",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "type": "module",
+  "description": "Implement Global Env.",
+  "dependencies": {
+    "dotenv": "^16.4.5"
+  }
+}

@@ -8,12 +8,14 @@
   ],
   "packageManager": "npm@9.8.1",
   "scripts": {
-    "dev": "turbo run dev",
+    "dev": "husky run pre-dev && turbo run dev",
     "build": "turbo run build",
     "lint": "turbo run lint",
-    "test": "turbo run test"
+    "test": "turbo run test",
+    "prepare": "husky install"
   },
   "devDependencies": {
+    "husky": "^8.0.0",
     "turbo": "^2.1.3"
   }
 }
