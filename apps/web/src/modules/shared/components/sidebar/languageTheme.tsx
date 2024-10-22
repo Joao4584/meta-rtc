@@ -8,7 +8,7 @@ import {
   SelectLabel,
   SelectTrigger,
   SelectValue,
-} from "@/components/ui/select";
+} from "@/modules/shared/ui/select";
 import { useI18n, useChangeLocale, useCurrentLocale } from "@/locale/client";
 
 import usFlags from "@/assets/flags/4x3/us.svg";

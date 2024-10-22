@@ -1,8 +1,8 @@
 'use client';
 
 import type { ReactNode } from "react";
-import { HeaderDashboard } from "../header/Header";
-import { SidebarDashboard } from "../sidebar/Sidebar";
+import { HeaderDashboard } from "../components/header/Header";
+import { SidebarDashboard } from "../components/sidebar/Sidebar";
 import { MainPattern } from "../ui/GridPattern";
 
 export default function DashboardLayout({ children }: { children: ReactNode }) {

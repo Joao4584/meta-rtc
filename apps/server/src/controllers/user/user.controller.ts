@@ -27,8 +27,8 @@ export async function registerUserHandler(request: FastifyRequest<{ Body: Create
     }
   } catch (e) {
     if (e instanceof RouteError) {
-      return reply.code(e.statusCode).send({
-        status: e.status.toString(),
+      return reply.code(400).send({
+        status: "INVALID_ARGUMENTS",
         message: e.message
       });
     }

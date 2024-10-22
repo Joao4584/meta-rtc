@@ -32,14 +32,14 @@ export async function authHandler(request: FastifyRequest<{ Body: AuthInput; }>,
     }
    
   } catch (e) {
+    console.log(e);
     if (e instanceof RouteError) {
-      return reply.code(e.statusCode).send({
-        status: e.status.toString(),
+      return reply.code(400).send({
+        status: "INVALID_ARGUMENTS",
         message: e.message
       });
     }
-    console.log(e);
-    return reply.code(500).send(e);
+    return reply.code(400).send(e);
   }
 }
 
@@ -49,8 +49,8 @@ export async function pingHandler(request: FastifyRequest<{ Body: AuthInput}>, r
     return reply.code(200).send("Pong")
   } catch (e) {
     if (e instanceof RouteError) {
-      return reply.code(e.statusCode).send({
-        status: e.status.toString(),
+      return reply.code(400).send({
+        status: "INVALID_ARGUMENTS",
         message: e.message
       });
     }

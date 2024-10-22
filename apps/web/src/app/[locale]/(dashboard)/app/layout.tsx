@@ -1,4 +1,4 @@
-import DashboardLayout from "@/components/layout/DashboardLayout";
+import DashboardLayout from "@/modules/shared/layout/DashboardLayout";
 import { AuthProvider } from "@/providers/auth-provider";
 import React from "react";
 

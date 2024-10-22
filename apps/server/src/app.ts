@@ -4,7 +4,8 @@ const server = buildServer();
 
 async function main() {
   try {
-    await server.listen(2222, "0.0.0.0");
+    await server.listen({ port: 2222, host: 'localhost' });
+
 
     console.log(`Server ready at http://localhost:2222`);
   } catch (e) {
