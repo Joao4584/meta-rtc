@@ -1,6 +1,6 @@
 'use client';
-import RegisterPage from "@/modules/authentication/pages/registerPage";
+import LoginPage from "@/modules/authentication/pages/login.page";
 
 export default function AuthPage() {
-  return <RegisterPage/>;
+  return <LoginPage/>;
 }

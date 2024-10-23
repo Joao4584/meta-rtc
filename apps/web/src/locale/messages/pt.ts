@@ -41,6 +41,10 @@ export default {
     dontHaveAccount: 'Ainda não tem uma conta?',
     signUp: 'Inscreva-se',
     invalidUser: "Usuario invalido",
-    shortPassword: "Senha invalida"
+    shortPassword: "Senha invalida",
+    register_redirect: {
+      question: "Sem nenhuma conta?",
+      button: "Criar"
+    }
   },
 } as const;

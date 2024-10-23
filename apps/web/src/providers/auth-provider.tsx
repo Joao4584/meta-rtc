@@ -4,10 +4,11 @@ import { ReactNode } from 'react';
 import { cookies } from 'next/headers';
 import jwt from 'jsonwebtoken';
 import { redirect } from 'next/navigation';
+import { loadEnv } from '@project/env';
 
 export async function AuthProvider({ children }: { children: ReactNode }) {
-
-  const token = cookies().get('token');
+  loadEnv()
+  const token = cookies().get('session-token');
 
   if (!token) {
     redirect('/auth');
@@ -15,7 +16,8 @@ export async function AuthProvider({ children }: { children: ReactNode }) {
   }
 
   try {
-    jwt.verify(token.value, process.env.JWT_SECRET as string);
+    console.log(process.env.JWT_SECRET_KEY)
+    jwt.verify(token.value, process.env.JWT_SECRET_KEY as string);
   } catch (error) {
     redirect('/auth');
     return null;

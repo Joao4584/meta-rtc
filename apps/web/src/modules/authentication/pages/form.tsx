@@ -21,6 +21,8 @@ import {
 import { Input } from "@/modules/shared/ui/input";
 import type { ErrorsAxiosApi } from "@/modules/shared/types/error";
 import { isErrorsAxiosApi } from "@/lib/axios";
+import useCookie from "@/hooks/useCookie";
+import { loadEnv } from "@project/env";
 
 const FormSchema = z.object({
   user: z.string().min(1, { message: "Preencha um usuário válido." }),
@@ -33,7 +35,9 @@ interface LoginFormInputs {
 }
 
 const FormLoginComponent: React.FC = () => {
+
   const [loadings, setLoadings] = useState<boolean>(false);
+  const { cookieValue, updateCookie, deleteCookie } = useCookie("session-token");
 
   const form = useForm<z.infer<typeof FormSchema>>({
     resolver: zodResolver(FormSchema),
@@ -46,7 +50,10 @@ const FormLoginComponent: React.FC = () => {
 
     try {
       const response = await loginUser(data); 
-      console.log(response.status);
+      updateCookie(response.data.hash);
+      
+      Toasts.show(`Logado com sucesso!`, "success", response.data.message);
+      window.location.href = "/app" 
     } catch (error: unknown) {
       if (isErrorsAxiosApi(error)) {
         Toasts.show(`Erro ao realizar o Login`, "error", error.data.message);
@@ -86,9 +93,9 @@ const FormLoginComponent: React.FC = () => {
           )}
         />
         <div className="text-right mt-2">
-          <a href="#" className="text-sm font-semibold text-gray-700 hover:text-blue-700 focus:text-blue-700">
-            Esqueceu sua senha?
-          </a>
+            <a href="#" className="text-sm font-semibold text-slate-600 hover:text-blue-700 focus:text-blue-700">
+              Esqueceu sua senha?
+            </a>
         </div>
         <Button
           disabled={loadings} type="submit"

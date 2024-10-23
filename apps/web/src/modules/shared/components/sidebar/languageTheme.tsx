@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Divider } from "../ui/divider";
+import { Divider } from "../../ui/divider";
 import {
   Select,
   SelectContent,

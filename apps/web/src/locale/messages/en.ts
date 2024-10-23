@@ -41,6 +41,10 @@ export default {
     dontHaveAccount: "Don’t have an account yet?",
     signUp: 'Sign up',
     invalidUser: "Invalid user",
-    shortPassword: "Invalid password"
+    shortPassword: "Invalid password",
+    register_redirect: {
+      question: "Without any account?",
+      button: "Register"
+    }
   },
 } as const;

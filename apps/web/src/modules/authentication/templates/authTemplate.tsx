@@ -25,7 +25,6 @@ export default function AuthTemplate({ children } : ChildrenProps) {
       <div className='bg-white w-full md:max-w-full lg:max-w-full overflow-y-auto md:mx-auto lg:w-1/2 xl:w-1/3 h-screen px-6 lg:px-16 xl:px-12 flex items-center justify-center'>
         <div className="w-full h-full pt-4 lg:pt-22">
           { children }
-          
         </div>
       </div>
     </section>

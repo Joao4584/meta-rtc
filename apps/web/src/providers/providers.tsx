@@ -29,7 +29,7 @@ export function Providers({ locale, children }: ProviderProps) {
       <QueryClientProvider client={queryClient}>
         <ThemeProvider>
           {children}
-          <Toaster position='top-right' visibleToasts={3}  pauseWhenPageIsHidden duration={3600} gap={10}
+          <Toaster position='top-right' visibleToasts={3}   pauseWhenPageIsHidden duration={3600} gap={10}
             toastOptions={{
               closeButton: true,
               classNames: {

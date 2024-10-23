@@ -1,11 +1,18 @@
 'use client';
 
-import type { ReactNode } from "react";
+import { useEffect, type ReactNode } from "react";
 import { HeaderDashboard } from "../components/header/Header";
 import { SidebarDashboard } from "../components/sidebar/Sidebar";
 import { MainPattern } from "../ui/GridPattern";
+import { useTheme } from "next-themes";
 
 export default function DashboardLayout({ children }: { children: ReactNode }) {
+  const { setTheme } = useTheme();
+
+  useEffect(() => {
+    setTheme("dark");
+  }, [setTheme]);
+
   return (
     <main className="w-full h-full overflow-hidden dark:text-slate-200">
       <MainPattern />
