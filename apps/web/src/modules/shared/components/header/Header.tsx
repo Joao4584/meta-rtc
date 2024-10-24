@@ -11,12 +11,12 @@ export const HeaderDashboard = () => {
           <li className="w-48">
             <Image  src="/logo/icon-meta.png" alt="" className="w-32" width={200} height={65} />
           </li>
-          <li className="bg-gray-header-input bg-opacity-50 border-gray-700 border p-2.5 px-4 rounded-lg flex justify-between shadow-inner gap-6 cursor-default">
+          {/* <li className="bg-gray-header-input bg-opacity-50 border-gray-700 border p-2.5 px-4 rounded-lg flex justify-between shadow-inner gap-6 cursor-default">
             <span className="text-slate-200 items-center flex">lobby-erq23d32j89olij</span>
             <span className="bg-gray-btn-card shadow-inner hover:bg-indigo-400  transition-colors cursor-pointer border-gray-700 border px-2 rounded-md">
               <RefreshCcw className="w-4" />
             </span>
-          </li>
+          </li> */}
           <li className="flex items-center gap-8">
             <div className="flex gap-2">
               <button className="bg-gray-btn-card border-gray-700 hover:bg-slate-600 transition-colors border p-2 rounded-md flex items-center">

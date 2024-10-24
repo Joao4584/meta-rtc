@@ -1,6 +1,6 @@
 'use client';
 
-import { ChartScatter, Combine, LayoutDashboard, NotebookTabs } from "lucide-react";
+import { Bolt, ChartScatter, Combine, LayoutDashboard, List, NotebookTabs, User, type ChevronsLeftRight, type ConciergeBell } from "lucide-react";
 import { ReactElement } from "react";
 
 import { useI18n } from "./locale/client";
@@ -42,6 +42,18 @@ export function getRouteDashboard(): RouteDefinition[] {
             title: t("dashboard.routes.diagram"),
             icon: <ChartScatter />,
             path: "/diagram"
+        },
+        {
+            groupName: "Configurações",
+            icon: <Bolt/>,
+            path:"config",
+            routes: [
+                {
+                    title: "Perfil",
+                    icon: <User />,
+                    path: "/config/profile"
+                },
+            ]
         }
     ];
 }

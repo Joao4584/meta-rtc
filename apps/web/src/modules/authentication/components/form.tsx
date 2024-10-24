@@ -73,33 +73,33 @@ const FormLoginComponent: React.FC = () => {
         <FormField control={form.control} name="user"
           render={({ field }) => (
             <FormItem>
-              <FormLabel className="text-slate-600">Email ou Usuário</FormLabel>
+              <FormLabel className="text-slate-600 dark:text-slate-200">Email ou Usuário</FormLabel>
               <FormControl>
-                <Input placeholder="Coloque seu email ou usuário" {...field} />
+                <Input placeholder="Coloque seu email ou usuário" className="dark:bg-slate-600 dark:border-slate-500" {...field} />
               </FormControl>
-              <FormMessage />
+              <FormMessage className="dark:text-red-400" />
             </FormItem>
           )}
         />
         <FormField control={form.control} name="password"
           render={({ field }) => (
             <FormItem>
-              <FormLabel className="text-slate-600">Senha</FormLabel>
+              <FormLabel className="text-slate-600 dark:text-slate-200">Senha</FormLabel>
               <FormControl>
-                <Input type="password" placeholder="Coloque sua senha" {...field} />
+                <Input type="password" placeholder="Coloque sua senha" className="dark:bg-slate-600 dark:border-slate-500" {...field} />
               </FormControl>
-              <FormMessage />
+              <FormMessage className="dark:text-red-400" />
             </FormItem>
           )}
         />
         <div className="text-right mt-2">
-            <a href="#" className="text-sm font-semibold text-slate-600 hover:text-blue-700 focus:text-blue-700">
+            <a href="#" className="text-sm font-semibold dark:text-slate-300 text-slate-600 hover:text-blue-700 focus:text-blue-700">
               Esqueceu sua senha?
             </a>
         </div>
         <Button
           disabled={loadings} type="submit"
-          className="w-full h-12 block !bg-indigo-500 hover:!bg-indigo-400 focus:!bg-indigo-400 text-white font-semibold rounded-lg px-4 py-3 mt-6 hover:!text-white">
+          className="w-full h-12 block !bg-indigo-500 dark:!bg-indigo-500 hover:!bg-indigo-400 focus:!bg-indigo-400 text-white font-semibold rounded-lg px-4 py-3 mt-6 hover:!text-white">
           Entrar
         </Button>
       </form>

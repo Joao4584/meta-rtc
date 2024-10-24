@@ -71,33 +71,33 @@ const FormRegisterComponent: React.FC = () => {
         <FormField control={form.control} name="name"
           render={({ field }) => (
             <FormItem className="space-y-0">
-              <FormLabel className="text-slate-600">Nome:</FormLabel>
+              <FormLabel className="text-slate-600 dark:text-slate-200">Nome:</FormLabel>
               <FormControl>
-                <Input placeholder="" {...field} />
+                <Input placeholder="" className="dark:bg-slate-600 dark:border-slate-500" {...field} />
               </FormControl>
-              <FormMessage />
+              <FormMessage  className="dark:text-red-400"/>
             </FormItem>
           )}
         />
         <FormField control={form.control} name="user"
           render={({ field }) => (
             <FormItem className="space-y-0">
-              <FormLabel className="text-slate-600">Usuário:</FormLabel>
+              <FormLabel className="text-slate-600 dark:text-slate-200">Usuário:</FormLabel>
               <FormControl>
-                <Input placeholder="" {...field} />
+                <Input placeholder="" className="dark:bg-slate-600 dark:border-slate-500" {...field} />
               </FormControl>
-              <FormMessage />
+              <FormMessage  className="dark:text-red-400"/>
             </FormItem>
           )}
         />
         <FormField control={form.control} name="email"
           render={({ field }) => (
             <FormItem className="space-y-0 ">
-              <FormLabel className="text-slate-600">E-mail:</FormLabel>
+              <FormLabel className="text-slate-600 dark:text-slate-200">E-mail:</FormLabel>
               <FormControl>
-                <Input placeholder="" {...field} />
+                <Input placeholder="" className="dark:bg-slate-600 dark:border-slate-500" {...field} />
               </FormControl>
-              <FormMessage />
+              <FormMessage  className="dark:text-red-400"/>
             </FormItem>
           )}
         />
@@ -105,22 +105,22 @@ const FormRegisterComponent: React.FC = () => {
           <FormField control={form.control} name="password"
             render={({ field }) => (
               <FormItem className="space-y-0 w-1/2 mb-3">
-                <FormLabel className="text-slate-600">Senha:</FormLabel>
+                <FormLabel className="text-slate-600 dark:text-slate-200">Senha:</FormLabel>
                 <FormControl>
-                  <Input type="password" placeholder="" {...field} />
+                  <Input type="password" className="dark:bg-slate-600 dark:border-slate-500" placeholder="" {...field} />
                 </FormControl>
-                <FormMessage />
+                <FormMessage  className="dark:text-red-400"/>
               </FormItem>
             )}
           />
           <FormField control={form.control} name="confirmPassword"
             render={({ field }) => (
               <FormItem className="space-y-0 w-1/2">
-                <FormLabel className="text-slate-600">Confirme a Senha:</FormLabel>
+                <FormLabel className="text-slate-600 dark:text-slate-200">Confirme a Senha:</FormLabel>
                 <FormControl>
-                  <Input type="password" placeholder="" {...field} />
+                  <Input type="password" className="dark:bg-slate-600 dark:border-slate-500" placeholder="" {...field} />
                 </FormControl>
-                <FormMessage />
+                <FormMessage  className="dark:text-red-400"/>
               </FormItem>
             )}
           />

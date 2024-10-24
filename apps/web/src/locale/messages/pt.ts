@@ -45,6 +45,10 @@ export default {
     register_redirect: {
       question: "Sem nenhuma conta?",
       button: "Criar"
-    }
+    },
+    login_redirect: {
+      question: "Tem alguma conta?",
+      button: "Fazer Login"
+    },
   },
 } as const;

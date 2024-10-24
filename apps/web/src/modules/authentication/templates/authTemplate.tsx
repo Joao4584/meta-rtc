@@ -10,7 +10,7 @@ export default function AuthTemplate({ children } : ChildrenProps) {
   const { setTheme } = useTheme();
 
   useEffect(() => {
-    setTheme("light");
+    setTheme("dark"); 
   }, [setTheme]);
 
   return (
@@ -22,7 +22,7 @@ export default function AuthTemplate({ children } : ChildrenProps) {
         </DivEffect>
         <img src="/randon-background.jpg" alt="" className="w-full h-full opacity-50 object-cover" />
       </div>
-      <div className='bg-white w-full md:max-w-full lg:max-w-full overflow-y-auto md:mx-auto lg:w-1/2 xl:w-1/3 h-screen px-6 lg:px-16 xl:px-12 flex items-center justify-center'>
+      <div className='bg-white dark:bg-slate-700 w-full md:max-w-full lg:max-w-full overflow-y-auto md:mx-auto lg:w-1/2 xl:w-1/3 h-screen px-6 lg:px-16 xl:px-12 flex items-center justify-center'>
         <div className="w-full h-full pt-4 lg:pt-22">
           { children }
         </div>
