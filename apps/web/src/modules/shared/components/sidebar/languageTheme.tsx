@@ -15,6 +15,7 @@ import usFlags from "@/assets/flags/4x3/us.svg";
 import brFlags from "@/assets/flags/4x3/br.svg";
 import { DivEffect } from "@/lib/motion/effects";
 import { MoonStar, SunMoon } from "lucide-react";
+import useSidebarStore from "../../store/useSidebar.store";
 
 interface LanguageListProps {
   path: string;
@@ -27,7 +28,7 @@ export const LanguageThemes = () => {
   const changeLocale = useChangeLocale();
   const localeCurrent = useCurrentLocale();
   const [selectedLanguage, setSelectedLanguage] = useState<string>();
-  // const [theme, setTheme] = useState<string>("light");
+  const { isSidebarMinimized } = useSidebarStore();
 
   const languages: LanguageListProps[] = [
     {
@@ -46,20 +47,11 @@ export const LanguageThemes = () => {
     setSelectedLanguage(localeCurrent);
   }, [localeCurrent]);
 
-  //  const handleThemeChange = (selectedTheme: string) => {
-  //   setTheme(selectedTheme);
-  //   if (selectedTheme === "dark") {
-  //     document.body.classList.add("dark");
-  //   } else {
-  //     document.body.classList.remove("dark");
-  //   }
-  // };
-
   const activeLanguage = languages.find((lang) => lang.path === selectedLanguage);
 
   return (
     <div className="w-full h-20 absolute bottom-0">
-      <Divider className="border-dashed dark:border-gray-700" />
+      <Divider className="border-dashed dark:border-gray-700 w-11/12 relative-center-x " />
       <div className="w-full h-full gap-1 flex flex-wrap justify-center items-center">
         <div className="w-6/6">
         <DivEffect>
@@ -70,16 +62,16 @@ export const LanguageThemes = () => {
               changeLocale(value);
             }}
           >
-            <SelectTrigger className="w-[180px]">
+            <SelectTrigger className={`${!isSidebarMinimized ? "w-[180px]": "w-[42px]"}`}>
               <span className="flex items-center">
                 {activeLanguage && (
-                  <span className="flex flex-wrap">
+                  <span className="flex flex-wrap ">
                     <img
                       src={activeLanguage.icon.src}
                       alt={activeLanguage.name}
-                      className="w-5 h-5 mr-2"
+                      className="w-5 h-5 mr-5"
                     />
-                    <span>{activeLanguage.name}</span>
+                    {!isSidebarMinimized ? <span>{activeLanguage.name}</span> : null}
                   </span>
                 )}
               </span>

@@ -5,9 +5,11 @@ import { HeaderDashboard } from "../components/header/Header";
 import { SidebarDashboard } from "../components/sidebar/Sidebar";
 import { MainPattern } from "../ui/GridPattern";
 import { useTheme } from "next-themes";
+import useSidebarStore from "../store/useSidebar.store";
 
 export default function DashboardLayout({ children }: { children: ReactNode }) {
   const { setTheme } = useTheme();
+  const { isSidebarMinimized } = useSidebarStore();
 
   useEffect(() => {
     setTheme("dark");
@@ -18,10 +20,10 @@ export default function DashboardLayout({ children }: { children: ReactNode }) {
       <MainPattern />
       <HeaderDashboard />
       <div className="flex w-full" style={{ height: "calc(100vh - 64px)"}}>
-        <div className="w-56 h-full relative shadow-inner bg-gray-main-2 bg-opacity-50">
+        <div className={`${isSidebarMinimized ? "w-14": "w-56"} transition-all  h-full relative shadow-inner bg-gray-main-2 bg-opacity-50`}>
           <SidebarDashboard/>
         </div>
-        <div className="shadow-inner"  style={{ width: "calc(100vw - 14rem)"}}>
+        <div className="shadow-inner"  style={{ width: `calc(100vw - ${isSidebarMinimized ? "56px" : "14rem"})`}}>
           {children}
         </div>
       </div>

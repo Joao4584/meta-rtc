@@ -104,3 +104,9 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+.relative-center-x{
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
