@@ -1,12 +1,8 @@
 import { defineConfig } from 'vitest/config';
-import path from 'path';
+import viteConfig from './vite.config';
 
 export default defineConfig({
-  resolve: {
-    alias: {
-      '@': path.resolve(__dirname, 'src'), 
-    },
-  },
+  ...viteConfig,
   test: {
     globals: true,
     environment: 'node',

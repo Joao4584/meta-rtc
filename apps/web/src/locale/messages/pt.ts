@@ -9,6 +9,9 @@ export default {
     }
   },
   dashboard: {
+    badge: {
+      "construction": "Em construção"
+    },
     routes: {
       dashboard: "Painel",
       social: "Social",

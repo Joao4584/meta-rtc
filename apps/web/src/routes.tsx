@@ -6,9 +6,10 @@ import { ReactElement } from "react";
 import { useI18n } from "./locale/client";
 
 export interface RouteProps {
-    title: string;
-    icon: ReactElement;
-    path: string;
+    title: string,
+    icon: ReactElement,
+    path: string,
+    disabled?: boolean
 }
 
 export interface RouteGroup {
@@ -24,7 +25,7 @@ export function getRouteDashboard(): RouteDefinition[] {
 
     return [
         {
-            title: t("dashboard.routes.dashboard"),
+            title: `${t("dashboard.routes.dashboard")}`,
             icon: <LayoutDashboard />,
             path: "/"
         },
@@ -41,7 +42,8 @@ export function getRouteDashboard(): RouteDefinition[] {
         {
             title: t("dashboard.routes.diagram"),
             icon: <ChartScatter />,
-            path: "/diagram"
+            path: "/diagram",
+            disabled: true
         },
         {
             groupName: "Configurações",

@@ -7,11 +7,6 @@ import type { ChildrenProps } from '@/modules/shared/types/children';
 import { useTheme } from 'next-themes';
 
 export default function AuthTemplate({ children } : ChildrenProps) {
-  const { setTheme } = useTheme();
-
-  useEffect(() => {
-    setTheme("dark"); 
-  }, [setTheme]);
 
   return (
     <React.Fragment>
