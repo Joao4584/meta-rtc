@@ -2,13 +2,14 @@
 
 import React from 'react';
 import { DivEffect } from '@/lib/motion/effects';
+import ContentComponentPage from '@/modules/dashboard/components/card/ContentPage';
 
 
 export default function Profile() {
 
   return (
-    <DivEffect className='w-full mt-24'>
-     
-    </DivEffect>
+      <ContentComponentPage title='Test' >
+        dwa
+      </ContentComponentPage>
   )
 }

@@ -46,6 +46,23 @@ class UserRepository extends GlobalRepository {
 		}
 	}
 
+
+	public async getMeUser(){
+		if(this.id_user){
+			const meUser = await prisma.users.findFirst({
+				where: {
+					id: this.id_user
+				},
+				include: {
+					UserSocial: true
+				}
+			});
+		
+				return meUser;
+		}
+		return null;
+	}
+
 	// public async getUser(){
 	// 	if(!this.id_user){
 	// 		new

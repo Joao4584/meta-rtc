@@ -21,7 +21,7 @@ const SingleMenu: React.FC<SingleMenuProps> = ({ route, isActive, className }) =
         if(route.disabled != true) { router.push(`/app${route.path}`) }
     }
     return (
-        <li  className={`items-center cursor-pointer rounded-sm text-sm relative dark:hover:bg-slate-500 dark:hover:bg-opacity-20 dark:hover:text-slate-200 ${isActive ? 'text-black dark:text-slate-200' : 'dark:text-gray-400'} ${route.disabled == true ? "dark:text-gray-700" : ""} ${className} `}
+        <li  className={`items-center cursor-pointer rounded-sm text-sm relative dark:hover:bg-slate-500 dark:hover:bg-opacity-20 dark:hover:text-slate-200 ${isActive ? 'text-black dark:text-slate-200' : 'dark:text-gray-400'} ${route.disabled == true ? "dark:text-gray-700 cursor-not-allowed" : ""} ${className} `}
             onClick={redirectList} >
             <DivEffect whileTap={{ scale: 0.95 }}>
                 <div className={`flex w-full ${!isSidebarMinimized ? "mt-1": "mt-1.5"} py-3 px-6`}>

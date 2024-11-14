@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import type { ReactElement } from "react";
 import { GeistSans } from "geist/font/sans";
 
-import { Providers } from "@/providers/providers";
+import { Providers } from "@/modules/shared/providers/providers";
 import "@/assets/globals.css";
 
 export const metadata: Metadata = {

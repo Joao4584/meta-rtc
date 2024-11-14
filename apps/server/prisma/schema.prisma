@@ -11,18 +11,26 @@ datasource db {
 }
 
 model Users {
-  id          Int       @id @default(autoincrement())
-  user        String    @unique
-  name        String    @db.VarChar(240)
-  password    String    @db.Text
-  email       String    @unique
-  image_url   String    @default("") @db.Text
-  status      Boolean   @default(true)
-  verify_code String?   @db.VarChar(13)
-  ip_access   String?   @db.VarChar(15)
-  created_at  DateTime  @default(now())
-  updated_at  DateTime? @updatedAt
-  Logs        Logs[]
+  id             Int                 @id @default(autoincrement())
+  user           String              @unique
+  name           String              @db.VarChar(240)
+  password       String              @db.Text
+  email          String              @unique
+  image_url      String              @default("") @db.Text
+  status         Boolean             @default(true)
+  verify_code    String?             @db.VarChar(13)
+  ip_access      String?             @db.VarChar(15)
+  created_at     DateTime            @default(now())
+  updated_at     DateTime?           @updatedAt
+  Logs           Logs[]
+  ChatsInitiated Chat[]              @relation("UserInitiatedChats")
+  ChatsReceived  Chat[]              @relation("UserReceivedChats")
+  Notifications  UserNotifications[]
+  UserSocial     UserSocial?
+  Messages       Messages[]
+
+  FriendsInitiated Friends[] @relation("UserFriends")
+  FriendsReceived  Friends[] @relation("UserFriendsReverse")
 }
 
 model Logs {
@@ -35,4 +43,65 @@ model Logs {
   ip_access  String?   @db.VarChar(45)
   created_at DateTime? @default(now())
   user       Users     @relation(fields: [user_id], references: [id])
+}
+
+model Chat {
+  id           Int        @id @default(autoincrement())
+  initiator_id Int
+  recipient_id Int
+  created_at   DateTime   @default(now())
+  updated_at   DateTime?  @updatedAt
+  Messages     Messages[]
+  initiator    Users      @relation("UserInitiatedChats", fields: [initiator_id], references: [id])
+  recipient    Users      @relation("UserReceivedChats", fields: [recipient_id], references: [id])
+}
+
+model Messages {
+  id         BigInt    @id @default(autoincrement())
+  chat_id    Int
+  sender_id  Int
+  content    String    @db.Text
+  viewed_at  DateTime?
+  sent_at    DateTime  @default(now())
+  chat       Chat      @relation(fields: [chat_id], references: [id])
+  sender     Users     @relation(fields: [sender_id], references: [id])
+  created_at DateTime  @default(now())
+  updated_at DateTime? @updatedAt
+}
+
+model UserNotifications {
+  id           Int       @id @default(autoincrement())
+  user_id      Int
+  chat_enabled Boolean   @default(true)
+  email_alerts Boolean   @default(false)
+  push_alerts  Boolean   @default(true)
+  user         Users     @relation(fields: [user_id], references: [id])
+  created_at   DateTime  @default(now())
+  updated_at   DateTime? @updatedAt
+}
+
+model UserSocial {
+  id           Int       @id @default(autoincrement())
+  user_id      Int       @unique
+  display_name String?   @db.VarChar(240)
+  profile_pic  String?   @db.Text
+  is_busy      Boolean   @default(false)
+  last_online  DateTime?
+  user         Users     @relation(fields: [user_id], references: [id])
+  created_at   DateTime  @default(now())
+  updated_at   DateTime? @updatedAt
+}
+
+model Friends {
+  id         Int       @id @default(autoincrement())
+  user_id    Int
+  friend_id  Int
+  status     String    @default("pending")
+  created_at DateTime  @default(now())
+  updated_at DateTime? @updatedAt
+
+  user   Users @relation("UserFriends", fields: [user_id], references: [id])
+  friend Users @relation("UserFriendsReverse", fields: [friend_id], references: [id])
+
+  @@unique([user_id, friend_id])
 }

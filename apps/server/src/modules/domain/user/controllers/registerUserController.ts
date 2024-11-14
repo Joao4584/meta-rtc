@@ -24,15 +24,23 @@ export async function registerUserController(request: FastifyRequest<{ Body: Cre
         ip
       });
 
-      return sendResponse(reply, 200, 'success', "Cadastrado com sucesso.", { identify: newUser.id });
+      return sendResponse({
+        fastify: reply,
+        statusCode: 200,
+        status: "success",
+        message: "Cadastrado com sucesso.",
+        data: { identify: newUser.id }
+      });
     }
 
-    return sendResponse(reply, 400, 'invalid_register', "Não foi possível criar o usuário.");
+    return sendResponse({
+      fastify: reply,
+      statusCode: 400,
+      status: "invalid_register",
+      message: "Não foi possível criar o usuário."
+    });
 
   } catch (error) {
     return handleErrors(error, reply);
   }
 }
-
-
-
