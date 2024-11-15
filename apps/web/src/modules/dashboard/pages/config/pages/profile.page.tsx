@@ -1,15 +1,21 @@
-'use client';
+"use client";
 
-import React from 'react';
-import { DivEffect } from '@/lib/motion/effects';
-import ContentComponentPage from '@/modules/dashboard/components/card/ContentPage';
-
+import React, { useState } from "react";
+import ContentComponentPage from "@/modules/dashboard/components/card/ContentPage";
+import ProfileComponent from "../components/profile";
+import PasswordEditComponent from "../components/PasswordEdit";
 
 export default function Profile() {
+ 
 
   return (
-      <ContentComponentPage title='Test' >
-        dwa
+    <React.Fragment>
+      <ContentComponentPage>
+        <ProfileComponent />
       </ContentComponentPage>
-  )
+      <ContentComponentPage className="pt-0">
+          <PasswordEditComponent />
+      </ContentComponentPage>
+    </React.Fragment>
+  );
 }

@@ -24,7 +24,7 @@ const SingleMenu: React.FC<SingleMenuProps> = ({ route, isActive, className }) =
         <li  className={`items-center cursor-pointer rounded-sm text-sm relative dark:hover:bg-slate-500 dark:hover:bg-opacity-20 dark:hover:text-slate-200 ${isActive ? 'text-black dark:text-slate-200' : 'dark:text-gray-400'} ${route.disabled == true ? "dark:text-gray-700 cursor-not-allowed" : ""} ${className} `}
             onClick={redirectList} >
             <DivEffect whileTap={{ scale: 0.95 }}>
-                <div className={`flex w-full ${!isSidebarMinimized ? "mt-1": "mt-1.5"} py-3 px-6`}>
+                <div className={`flex w-full ${!isSidebarMinimized ? "mt-1 px-6": "mt-1.5 px-5"} py-3 `}>
                     <span className="mr-3 icon-menu-svg"> {route.icon} </span>
                     <span className="mxd:hidden text-sm inline-block"> {!isSidebarMinimized ? route.title : null}  </span>
                 </div>

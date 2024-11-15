@@ -50,7 +50,7 @@ export const LanguageThemes = () => {
   const activeLanguage = languages.find((lang) => lang.path === selectedLanguage);
 
   return (
-    <div className="w-full h-20 absolute bottom-0">
+    <div className="w-full h-20 absolute bottom-0  ">
       <Divider className="border-dashed dark:border-gray-700 w-11/12 relative-center-x " />
       <div className="w-full h-full gap-1 flex flex-wrap justify-center items-center">
         <div className="w-6/6">

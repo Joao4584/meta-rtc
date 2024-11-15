@@ -1,17 +1,14 @@
 import { ReactNode } from 'react';
 
 interface ContentComponentPageProps {
-  title: string;
-  children: ReactNode;
+  className? : string,
+  children: ReactNode
 }
 
-export default function ContentComponentPage({ title, children }: ContentComponentPageProps) {
+export default function ContentComponentPage({ className, children }: ContentComponentPageProps) {
   return (
-    <div className="p-6  min-h-screen text-white">
-      <h1 className="text-2xl font-semibold mb-6">{title}</h1>
-      
-      <div className="bg-gray-800 bg-opacity-60 p-6 rounded-xl shadow-lg">
-       
+    <div className={`p-6   text-white ${className}`}>
+      <div className={`bg-gradient-to-tr from-gray-800 to-transparent bg-opacity-60 p-4 pt-1 rounded-xl shadow-lg`}>
         <div className="">
           {children}
         </div>

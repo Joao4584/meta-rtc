@@ -11,30 +11,33 @@ datasource db {
 }
 
 model Users {
-  id             Int                 @id @default(autoincrement())
-  user           String              @unique
-  name           String              @db.VarChar(240)
-  password       String              @db.Text
-  email          String              @unique
-  image_url      String              @default("") @db.Text
-  status         Boolean             @default(true)
-  verify_code    String?             @db.VarChar(13)
-  ip_access      String?             @db.VarChar(15)
-  created_at     DateTime            @default(now())
-  updated_at     DateTime?           @updatedAt
-  Logs           Logs[]
-  ChatsInitiated Chat[]              @relation("UserInitiatedChats")
-  ChatsReceived  Chat[]              @relation("UserReceivedChats")
-  Notifications  UserNotifications[]
-  UserSocial     UserSocial?
-  Messages       Messages[]
-
-  FriendsInitiated Friends[] @relation("UserFriends")
-  FriendsReceived  Friends[] @relation("UserFriendsReverse")
+  id               Int                 @id @default(autoincrement())
+  public_id        String              @unique @default(uuid()) // Adicionado uuid()
+  user             String              @unique
+  name             String              @db.VarChar(240)
+  password         String              @db.Text
+  email            String              @unique
+  status           Boolean             @default(true)
+  verify_code      String?             @db.VarChar(13)
+  ip_access        String?             @db.VarChar(15)
+  created_at       DateTime            @default(now())
+  updated_at       DateTime?           @updatedAt
+  Logs             Logs[]
+  ChatsInitiated   Chat[]              @relation("UserInitiatedChats")
+  ChatsReceived    Chat[]              @relation("UserReceivedChats")
+  Notifications    UserNotifications[]
+  UserSocial       UserSocial?
+  Messages         Messages[]
+  FriendsInitiated Friends[]           @relation("UserFriends")
+  FriendsReceived  Friends[]           @relation("UserFriendsReverse")
+  Room             Room[]
+  RoomParticipants RoomParticipants[]
+  TaskVotes        TaskVotes[]
 }
 
 model Logs {
   id         BigInt    @id @default(autoincrement())
+  public_id  String    @unique @default(uuid())
   user_id    Int
   link_id    Int?
   reference  String
@@ -45,19 +48,9 @@ model Logs {
   user       Users     @relation(fields: [user_id], references: [id])
 }
 
-model Chat {
-  id           Int        @id @default(autoincrement())
-  initiator_id Int
-  recipient_id Int
-  created_at   DateTime   @default(now())
-  updated_at   DateTime?  @updatedAt
-  Messages     Messages[]
-  initiator    Users      @relation("UserInitiatedChats", fields: [initiator_id], references: [id])
-  recipient    Users      @relation("UserReceivedChats", fields: [recipient_id], references: [id])
-}
-
 model Messages {
   id         BigInt    @id @default(autoincrement())
+  public_id  String    @unique @default(uuid())
   chat_id    Int
   sender_id  Int
   content    String    @db.Text
@@ -71,6 +64,7 @@ model Messages {
 
 model UserNotifications {
   id           Int       @id @default(autoincrement())
+  public_id    String    @unique @default(uuid())
   user_id      Int
   chat_enabled Boolean   @default(true)
   email_alerts Boolean   @default(false)
@@ -80,8 +74,23 @@ model UserNotifications {
   updated_at   DateTime? @updatedAt
 }
 
+model Chat {
+  id           Int        @id @default(autoincrement())
+  public_id    String     @unique @default(uuid())
+  initiator_id Int? // Usado para chats diretos
+  recipient_id Int? // Usado para chats diretos
+  room_id      Int?       @unique // Garantimos a unicidade
+  created_at   DateTime   @default(now())
+  updated_at   DateTime?  @updatedAt
+  Messages     Messages[]
+  initiator    Users?     @relation("UserInitiatedChats", fields: [initiator_id], references: [id])
+  recipient    Users?     @relation("UserReceivedChats", fields: [recipient_id], references: [id])
+  room         Room?      @relation(fields: [room_id], references: [id]) // Define `fields` e `references`
+}
+
 model UserSocial {
   id           Int       @id @default(autoincrement())
+  public_id    String    @unique @default(uuid())
   user_id      Int       @unique
   display_name String?   @db.VarChar(240)
   profile_pic  String?   @db.Text
@@ -94,6 +103,7 @@ model UserSocial {
 
 model Friends {
   id         Int       @id @default(autoincrement())
+  public_id  String    @unique @default(uuid())
   user_id    Int
   friend_id  Int
   status     String    @default("pending")
@@ -104,4 +114,65 @@ model Friends {
   friend Users @relation("UserFriendsReverse", fields: [friend_id], references: [id])
 
   @@unique([user_id, friend_id])
+}
+
+model Room {
+  id           Int                @id @default(autoincrement())
+  public_id    String             @unique @default(uuid())
+  code         String             @unique @db.VarChar(6)
+  name         String             @db.VarChar(240)
+  is_public    Boolean            @default(true)
+  creator_id   Int
+  description  String?            @db.Text
+  created_at   DateTime           @default(now())
+  updated_at   DateTime?          @updatedAt
+  creator      Users              @relation(fields: [creator_id], references: [id])
+  participants RoomParticipants[]
+  tasks        Task[]
+  chat         Chat?              @relation // Apenas referencia o chat, sem definir `fields` e `references`
+
+  @@unique([code, is_public])
+}
+
+model RoomParticipants {
+  id        Int      @id @default(autoincrement())
+  public_id String   @unique @default(uuid())
+  room_id   Int
+  user_id   Int
+  role      String   @default("member") // Valores possíveis: "member", "leader", "creator"
+  joined_at DateTime @default(now())
+
+  room Room  @relation(fields: [room_id], references: [id])
+  user Users @relation(fields: [user_id], references: [id])
+
+  @@unique([room_id, user_id])
+}
+
+model Task {
+  id          Int       @id @default(autoincrement())
+  public_id   String    @unique @default(uuid())
+  room_id     Int
+  title       String    @db.VarChar(240)
+  description String?   @db.Text
+  status      String    @default("pending") // Valores: "pending", "completed"
+  points      Int? // Calculado após a votação
+  created_at  DateTime  @default(now())
+  updated_at  DateTime? @updatedAt
+
+  room  Room        @relation(fields: [room_id], references: [id])
+  votes TaskVotes[]
+}
+
+model TaskVotes {
+  id         Int      @id @default(autoincrement())
+  public_id  String   @unique @default(uuid())
+  task_id    Int
+  user_id    Int
+  points     Int // Valor do voto (exemplo: 1, 2, 3, 5, 8, etc.)
+  created_at DateTime @default(now())
+
+  task Task  @relation(fields: [task_id], references: [id])
+  user Users @relation(fields: [user_id], references: [id])
+
+  @@unique([task_id, user_id]) // Um voto por usuário por tarefa
 }

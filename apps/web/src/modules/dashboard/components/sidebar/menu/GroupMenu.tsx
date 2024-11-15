@@ -28,7 +28,7 @@ const GroupMenu: React.FC<GroupMenuProps> = ({ group, dashboardSegment }) => {
         <React.Fragment>
             <li onClick={toggleOpen} className={`items-center cursor-pointer rounded-sm text-sm relative dark:hover:bg-slate-500 dark:hover:bg-opacity-20 dark:hover:text-slate-400`}>
                 <DivEffect whileTap={{ scale: 0.95 }}>
-                    <div className={`flex w-full mt-1 py-3 px-6 ${haveActive ? 'text-black dark:text-slate-200' : 'dark:text-gray-400'}`}>
+                    <div className={`flex w-full mt-1 py-3 ${isSidebarMinimized ? "px-5" : "px-6"}  ${haveActive ? 'text-black dark:text-slate-200' : 'dark:text-gray-400'}`}>
                         <span className="mr-3 icon-menu-svg">{group.icon}</span>
                         {!isSidebarMinimized ? <span className="flex-1 mxd:hidden">{group.groupName}</span> : null}
                         <span className="ml-3 mxd:hidden mt-0.5 icon-menu-svg"> 
@@ -39,7 +39,7 @@ const GroupMenu: React.FC<GroupMenuProps> = ({ group, dashboardSegment }) => {
             </li>
             {isOpenGroup && group.routes && (
                 group.routes.map((route, index) => (
-                    <SingleMenu key={index} route={route} isActive={"/" + dashboardSegment === route.path} className="pl-3" />
+                    <SingleMenu key={index} route={route} isActive={"/" + dashboardSegment === route.path} className={`${!isSidebarMinimized ? "pl-3" : ""}`} />
                 ))
             )}
         </React.Fragment>
