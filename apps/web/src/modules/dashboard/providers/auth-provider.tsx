@@ -16,7 +16,6 @@ export async function AuthProvider({ children }: { children: ReactNode }) {
   }
 
   try {
-    console.log(process.env.JWT_SECRET_KEY)
     jwt.verify(token.value, process.env.JWT_SECRET_KEY as string);
   } catch (error) {
     redirect('/auth');

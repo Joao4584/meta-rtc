@@ -1,0 +1,23 @@
+{
+  "folders": [
+    {
+      "name": "Server API Meta RTC",
+      "path": "./apps/server"
+    }
+  ],
+  "settings": {},
+  "tasks": {
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "Open Web in New Window",
+        "type": "shell",
+        "command": "code ./apps/server",
+        "presentation": {
+          "reveal": "always",
+          "panel": "new"
+        }
+      }
+    ]
+  }
+}

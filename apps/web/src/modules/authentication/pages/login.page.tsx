@@ -3,8 +3,8 @@
 import React from 'react';
 import { DivEffect } from '@/lib/motion/effects';
 
-import FormLoginComponent from '../components/form';
-import { LinkRedirectRegister } from '../components/link-redirect';
+import FormLoginComponent from '../components/Login';
+import { LinkRedirectRegister } from '../components/LinkRedirect';
 
 export default function LoginPage() {
 

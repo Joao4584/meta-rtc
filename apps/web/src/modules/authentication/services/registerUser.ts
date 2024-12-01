@@ -1,6 +1,6 @@
 "use client"
 import api from "@/lib/axios";
-import type { RegisterFormInputs } from "../components/formRegister";
+import type { RegisterFormInputs } from "../components/Register";
 
 
 export const registerUser = async (credentials: RegisterFormInputs) => {

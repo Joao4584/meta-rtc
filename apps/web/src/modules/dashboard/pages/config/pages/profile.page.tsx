@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import ContentComponentPage from "@/modules/dashboard/components/card/ContentPage";
-import ProfileComponent from "../components/profile";
+import ProfileComponent from "../components/Profile";
 import PasswordEditComponent from "../components/PasswordEdit";
 
 export default function Profile() {

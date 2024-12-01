@@ -6,6 +6,7 @@ import { sendResponse } from "@/utils/response";
 import type { CreateUserInput } from "../schemas/registerUserSchema";
 import { UserRepository } from "@/modules/infrastructure/repositories/user.repo";
 import { handleErrors } from "@/core/errors/handleErrors";
+import { UserSocialRepository } from "@/modules/infrastructure/repositories/userSocial.repo";
 
 export async function registerUserController(request: FastifyRequest<{ Body: CreateUserInput }>, reply: FastifyReply) {
   const { user, password, email, name } = request.body;
@@ -16,6 +17,12 @@ export async function registerUserController(request: FastifyRequest<{ Body: Cre
     const newUser = await userRepo.createUser(user, password, ip, email, name);
 
     if (newUser) {
+      const userSocial = new UserSocialRepository();
+      const newSocial = userSocial.create({
+        idUser: newUser?.id,
+        name: newUser.name
+      })
+
       Logs.create({
         title: "Cadastrado no sistema", 
         reference: "register_success",

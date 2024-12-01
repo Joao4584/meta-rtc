@@ -1,6 +1,8 @@
 // src/context/UserProvider.tsx
 import { createContext, useContext, ReactNode, useEffect } from 'react';
 import { useUserStore } from '@/modules/shared/store/user.store';
+import { getUser } from '../services/get-user';
+import Toasts from '@/lib/toast';
 
 interface UserContextType {
   loading: boolean;
@@ -17,12 +19,10 @@ export const UserProvider: React.FC<UserProviderProps> = ({ children }) => {
 
   const fetchUser = async () => {
     try {
-      const response = await fetch('/api/user');
-      const data = await response.json();
-      setUser(data);
-    } catch (error) {
-      console.error("Erro ao buscar dados do usuário:", error);
-      setUser(null);
+      const response = await getUser(); 
+      setUser(response.data)
+    } catch (error: unknown) {
+      Toasts.show("Ocorreu um erro ao buscar informações do usuario", "error")
     }
   };
 

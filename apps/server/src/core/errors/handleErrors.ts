@@ -4,8 +4,25 @@ import { sendResponse } from "@/utils/response";
 
 export function handleErrors(error: unknown, reply: FastifyReply) {
   if (error instanceof RouteError) {
-    return sendResponse(reply, 400, 'INVALID_ARGUMENTS', error.message);
+    return sendResponse({
+      fastify: reply,
+      statusCode:400,
+      message: error.message,
+      data: {
+        error: error.status ?? "INVALID_ARGUMENTS"
+      }
+
+    });
   }
   console.error("Internal Error: ", error);
-  return sendResponse(reply, 500, 'INTERNAL_SERVER_ERROR', "Ocorreu um erro interno.");
+
+  return sendResponse({
+    fastify: reply,
+    statusCode:error.status ?? 500,
+    message: error?.message ?? "Ocorreu um erro interno.",
+    data: {
+      error: "Ocorreu um erro interno"
+    }
+
+  });
 }

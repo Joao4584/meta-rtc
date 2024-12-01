@@ -3,34 +3,29 @@
 import axios from 'axios';
 import { loadEnv } from "@project/env";
 import type { ErrorsAxiosApi } from '@/modules/shared/types/error';
+import { getCookie } from './cookie';
 
-// Função para obter a base URL da API
 const getApiBaseUrl = () => {
   if (typeof window !== 'undefined') {
-    return `${window.location.origin.replace(/:\d+$/, '')}:2222`;  // Porta correta
+    return `${window.location.origin.replace(/:\d+$/, '')}:2222`;  
   } else {
-    return `http://localhost:2222`;  // No servidor ou durante desenvolvimento
+    return `http://localhost:2222`; 
   }
 };
 
-// Cria a instância do Axios
 const api = axios.create({
   baseURL: getApiBaseUrl(),
-  withCredentials: true,  // Necessário para cookies e autenticação
+  withCredentials: true, 
 });
 
 loadEnv();
 
-// Interceptador para adicionar JWT no header, se presente
 api.interceptors.request.use(
   (config) => {
-    const sessionJwtKey = process.env.SESSION_JWT_STORAGE;
-    if (sessionJwtKey) {
-      const token = localStorage.getItem(sessionJwtKey); 
+      const token = getCookie('session-token'); 
       if (token) {
         config.headers.Authorization = `Bearer ${token}`;
       }
-    }
     return config;
   },
   (error) => {

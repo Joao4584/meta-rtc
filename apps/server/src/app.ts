@@ -1,4 +1,4 @@
-import buildServer from "./server";
+import buildServer from "./config/server";
 
 const server = buildServer();
 

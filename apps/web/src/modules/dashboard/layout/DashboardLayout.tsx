@@ -2,7 +2,7 @@
 
 import {  type ReactNode } from "react";
 import { HeaderDashboard } from "../components/header/Header";
-import { SidebarDashboard } from "@/modules/dashboard/components/sidebar/Sidebar";
+import { SidebarDashboard } from "@/modules/dashboard/components/sidebar/SidebarDashboard";
 import { MainPattern } from "../../shared/ui/GridPattern";
 import useSidebarStore from "../../shared/store/useSidebar.store";
 import { UserProvider } from "../providers/user-provider";

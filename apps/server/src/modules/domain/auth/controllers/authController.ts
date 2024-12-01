@@ -31,6 +31,6 @@ export async function authController(request: FastifyRequest<{ Body: AuthInput }
               message: error.message
           });
       }
-      return reply.code(500).send({ status: "error", message: "Ocorreu um erro interno." });
+      return reply.code(400).send({ status: "error", message: error?.message ?? "Ocorreu um erro interno." });
   }
 }

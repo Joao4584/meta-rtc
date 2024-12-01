@@ -12,7 +12,7 @@ datasource db {
 
 model Users {
   id               Int                 @id @default(autoincrement())
-  public_id        String              @unique @default(uuid()) // Adicionado uuid()
+  public_id        String              @unique @default(uuid())
   user             String              @unique
   name             String              @db.VarChar(240)
   password         String              @db.Text
@@ -79,7 +79,7 @@ model Chat {
   public_id    String     @unique @default(uuid())
   initiator_id Int? // Usado para chats diretos
   recipient_id Int? // Usado para chats diretos
-  room_id      Int?       @unique // Garantimos a unicidade
+  room_id      Int?       @unique
   created_at   DateTime   @default(now())
   updated_at   DateTime?  @updatedAt
   Messages     Messages[]
@@ -93,12 +93,25 @@ model UserSocial {
   public_id    String    @unique @default(uuid())
   user_id      Int       @unique
   display_name String?   @db.VarChar(240)
+  character_id Int?
   profile_pic  String?   @db.Text
   is_busy      Boolean   @default(false)
   last_online  DateTime?
   user         Users     @relation(fields: [user_id], references: [id])
   created_at   DateTime  @default(now())
   updated_at   DateTime? @updatedAt
+
+  character CharacterGame? @relation(fields: [character_id], references: [id])
+}
+
+model CharacterGame {
+  id         Int       @id @default(autoincrement())
+  code       String    @unique @db.VarChar(240)
+  status     Boolean   @default(true)
+  created_at DateTime  @default(now())
+  updated_at DateTime? @updatedAt
+
+  userSocial UserSocial[] @relation
 }
 
 model Friends {

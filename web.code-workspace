@@ -3,7 +3,21 @@
     {
       "name": "Web Meta RTC",
       "path": "./apps/web"
-    },
+    }
   ],
-
+  "settings": {},
+  "tasks": {
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "Open Web in New Window",
+        "type": "shell",
+        "command": "code ./apps/web",
+        "presentation": {
+          "reveal": "always",
+          "panel": "new"
+        }
+      }
+    ]
+  }
 }

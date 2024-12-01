@@ -3,7 +3,7 @@ import request from 'supertest';
 import { FastifyInstance } from 'fastify';
 import { PrismaClient } from '@prisma/client';
 
-import buildApp from '@/server'; 
+import buildApp from '@/config/server'; 
 
 let app: FastifyInstance; 
 const prisma = new PrismaClient(); 

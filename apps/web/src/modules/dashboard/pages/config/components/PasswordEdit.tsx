@@ -1,11 +1,14 @@
 'use client';
 
-import React from "react";
+import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/modules/shared/ui/form";
-import { Input } from "@/modules/shared/ui/input";
+import useDelay from "@/hooks/useDelay";
+import { passwordAlter } from "../services/passwordEditService";
+import Toasts from "@/lib/toast";
+import { isErrorsAxiosApi } from "@/lib/axios";
+import PasswordEditForm from "./PasswordEditForm";
 
 const FormSchema = z.object({
   oldPassword: z.string().nonempty("Senha atual é obrigatória."),
@@ -19,13 +22,32 @@ const FormSchema = z.object({
 export type PasswordFormInputs = z.infer<typeof FormSchema>;
 
 export default function PasswordEditComponent() {
+  const [loadings, setLoadings] = useState<boolean>(false);
+  const { delay } = useDelay();
+
   const form = useForm<PasswordFormInputs>({
     resolver: zodResolver(FormSchema),
     defaultValues: { oldPassword: "", password: "", confirmPassword: "" },
   });
 
-  const onSubmit = (data: PasswordFormInputs) => {
-    
+  const onSubmit = async (data: PasswordFormInputs) => {
+    setLoadings(true);
+
+    try {
+      const response = await passwordAlter(data);
+      await delay(600);
+      Toasts.show(`Senha alterada com sucesso!`, "success", response.data.message);
+      form.reset();
+    } catch (error: unknown) {
+      await delay(1000);
+      if (isErrorsAxiosApi(error)) {
+        Toasts.show(`Erro ao alterar`, "error", error.data.message);
+      } else {
+        console.error("Erro desconhecido:", error);
+      }
+    } finally {
+      setLoadings(false);
+    }
   };
 
   return (
@@ -34,76 +56,7 @@ export default function PasswordEditComponent() {
       <p className="text-gray-400 text-sm mb-4">
         Para alterar sua senha, preencha os campos abaixo.
       </p>
-
-      <Form {...form}>
-        <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
-          <FormField
-            control={form.control}
-            name="oldPassword"
-            render={({ field }) => (
-              <FormItem>
-                <FormLabel className="text-slate-600 dark:text-slate-400">Senha Atual</FormLabel>
-                <FormControl>
-                  <Input
-                    type="password"
-                    className="dark:bg-gray-800 text-white dark:border-slate-600 placeholder-gray-400 focus:outline-none focus:ring-2 "
-                    placeholder="Digite sua senha atual"
-                    {...field}
-                  />
-                </FormControl>
-                <FormMessage className="dark:text-red-400" />
-              </FormItem>
-            )}
-          />
-
-         <div className="flex gap-3 pb-3">
-          <FormField
-              control={form.control}
-              name="password"
-              render={({ field }) => (
-                <FormItem className="w-1/2">
-                  <FormLabel className="text-slate-600 dark:text-slate-400">Nova Senha</FormLabel>
-                  <FormControl>
-                    <Input
-                      type="password"
-                      className="dark:bg-gray-800 text-white dark:border-slate-600 placeholder-gray-400 focus:outline-none focus:ring-2 "
-                      placeholder="Digite sua nova senha"
-                      {...field}
-                    />
-                  </FormControl>
-                  <FormMessage className="dark:text-red-400" />
-                </FormItem>
-              )}
-            />
-
-            <FormField
-              control={form.control}
-              name="confirmPassword"
-              render={({ field }) => (
-                <FormItem className="w-1/2">
-                  <FormLabel className="text-slate-600 dark:text-slate-400">Confirmar Nova Senha</FormLabel>
-                  <FormControl>
-                    <Input
-                      type="password"
-                      className="dark:bg-gray-800 text-white dark:border-slate-600 placeholder-gray-400 focus:outline-none focus:ring-2 "
-                      placeholder="Confirme sua nova senha"
-                      {...field}
-                    />
-                  </FormControl>
-                  <FormMessage className="dark:text-red-400" />
-                </FormItem>
-              )}
-            />
-         </div>
-
-          <button
-            type="submit"
-            className="w-full bg-indigo-700 px-4 py-3  rounded-md text-white font-medium hover:bg-indigo-500"
-          >
-            Alterar Senha
-          </button>
-        </form>
-      </Form>
+      <PasswordEditForm form={form} onSubmit={onSubmit} loading={loadings} />
     </div>
   );
 }

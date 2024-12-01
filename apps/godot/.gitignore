@@ -1,0 +1,29 @@
+# Godot specific files
+/.godot/
+/export/
+/.import/
+/settings.cfg
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# IDE files (ex: JetBrains, VSCode)
+.idea/
+.vscode/
+
+# Temporary files
+*.tmp
+*.log
+*.bak
+*.swp
+
+# Build artifacts
+*.pck
+*.exe
+*.apk
+*.app
+*.x86_64
+
+# Godot project specific caches
+.editor/ 

@@ -2,8 +2,8 @@
 
 import React from 'react';
 import { DivEffect } from '@/lib/motion/effects';
-import FormRegisterComponent from '../components/formRegister';
-import { LinkRedirectLogin } from '../components/link-redirect';
+import FormRegisterComponent from '../components/Register';
+import { LinkRedirectLogin } from '../components/LinkRedirect';
 
 export default function RegisterPage() {
 

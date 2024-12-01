@@ -8,7 +8,10 @@ import { GlobalRepository } from "./__global.repo";
 // * Exports * //
  
 // * Components * //
-
+interface AlterPasswordProps{
+	passwordNew: string,
+	passwordOld
+}
 class UserRepository extends GlobalRepository {
 
   private id_user: number | null;
@@ -63,11 +66,36 @@ class UserRepository extends GlobalRepository {
 		return null;
 	}
 
-	// public async getUser(){
-	// 	if(!this.id_user){
-	// 		new
-	// 	}
-	// }
+	public async alterPassword(data: AlterPasswordProps){
+		if(this.id_user){
+			const user = await prisma.users.findFirst({
+				where: { 
+					id: this.id_user
+				},
+			});
+	
+			if (!user || !(await compare(data.passwordOld, user.password))) {
+				throw new RouteError({
+					status: "password_incorrect",
+					message: "senha incorreta.",
+					statusCode: 400
+				});
+			}
+
+			const hashedPassword = await hash(data.passwordNew, 12);
+			const alterUser = await prisma.users.update({
+				where: { id: this.id_user},
+				data: {
+					password: hashedPassword
+				}
+			})
+
+			return alterUser;
+
+		}
+
+		return false;
+	}
 
 
 }

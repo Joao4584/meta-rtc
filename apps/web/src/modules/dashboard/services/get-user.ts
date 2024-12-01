@@ -2,12 +2,11 @@
 import api from "@/lib/axios";
 
 
-export const loginUser = async (credentials: LoginCredentials) => {
-  const { user, password } = credentials;
+export const getUser = async () => {
 
   try {
-    const response = await api.get("/auth", { access: user, password });
-    return response;
+    const response = await api.get("/users/me");
+    return response.data;
   } catch (error: any) {
     console.error("Erro durante o login:", error.message);
     throw {
